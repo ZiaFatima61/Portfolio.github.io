@@ -90,4 +90,5 @@ td, th {
     padding: 8px;
     border-bottom: 1px solid #B2DFDB;
     font-size: 14px;
+    text-align: left; 
 }
