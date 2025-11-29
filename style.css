@@ -106,6 +106,16 @@ body {
   transition: 0.4s ease;
 }
 
+.card-img {
+  width: 100%;
+  height: 260px;      
+  object-fit: cover;  
+  border-radius: 18px;
+  margin-bottom: 15px;
+  border: 3px solid #192A51;
+}
+
+
 .card:hover {
   transform: translate(-5px, -5px);
   box-shadow: 10px 12px 0px #8B9EB7;
