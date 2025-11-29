@@ -126,6 +126,25 @@ body {
   box-shadow: 10px 12px 0px #8B9EB7;
 }
 
+.card.details h2 {
+  font-size: 28px;
+}
+
+.card.details ul li,
+.card.details li,
+.card.details p {
+  font-size: 20px;
+}
+
+.team-card h3 {
+  font-size: 22px;
+}
+
+.team-card p {
+  font-size: 18px;
+}
+
+
 
 /* ======== TEAM SECTION ======== */
 .team-grid {
