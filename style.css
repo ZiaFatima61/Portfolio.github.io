@@ -108,15 +108,15 @@ body {
   overflow: hidden;   /* added to keep image inside borders */
 }
 
-/* Applies only to image inserted in card */
 .city-image {
   width: 100%;
-  height: 230px;     /* fixed space for image */
-  object-fit: cover; /* keeps inside without stretching */
+  height: auto;       /* allows full image display */
+  object-fit: contain; /* shows full image without cropping */
   border-radius: 18px;
   border: 3px solid #192A51;
-  display: block;    /* removes unwanted spacing */
+  display: block;
 }
+
 
 .card:hover {
   transform: translate(-5px, -5px);
