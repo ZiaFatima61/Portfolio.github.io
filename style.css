@@ -110,12 +110,13 @@ body {
 /* Applies only to image inserted in card */
 .city-image {
   width: 100%;
-  height: auto;       /* allows full image display */
-  object-fit: contain; /* shows full image without cropping */
+  max-height: 400px;   /* reduce size here */
+  object-fit: contain; /* show full image without cutting */
   border-radius: 18px;
   border: 3px solid #192A51;
   display: block;
 }
+
 
 
 .card:hover {
