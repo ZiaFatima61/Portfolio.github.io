@@ -10,12 +10,15 @@ body {
   background: #D7BA89;  /* Light beige background */
   color: #0F1C2E;       /* Dark navy text */
   padding: 0;
+  /* MODIFIED: Increased base font size */
+  font-size: 20px; 
 }
 
 .intro-text {
   margin: 20px 60px 8px 60px;
   text-align: center;
-  font-size: 18px;
+  /* MODIFIED: Increased text font size */
+  font-size: 20px; 
   font-weight: 600;
   color: #192A51;
   line-height: 1.5;
@@ -23,16 +26,13 @@ body {
 }
 
 .intro-text strong {
-  font-size: 24px;
+  /* MODIFIED: Increased strong (heading) font size */
+  font-size: 28px; 
   font-weight: 800;
   display: block;
   margin-bottom: 6px; /* small spacing */
   color: #192A51;
 }
-
-
-
-
 
 /* ======== NAVBAR ======== */
 .navbar {
@@ -54,7 +54,8 @@ body {
   text-decoration: none;
   color: #D7BA89;
   font-weight: 600;
-  font-size: 18px;
+  /* MODIFIED: Increased link font size */
+  font-size: 20px; 
   transition: 0.3s;
 }
 
@@ -64,7 +65,8 @@ body {
 }
 
 .logo {
-  font-size: 28px;
+  /* MODIFIED: Increased logo font size */
+  font-size: 32px; 
   font-weight: 800;
   color: #D7BA89;
 }
@@ -82,12 +84,12 @@ body {
 }
 
 .hero-content p {
-  font-size: 18px;
+  /* MODIFIED: Increased paragraph font size */
+  font-size: 20px; 
   color: #0F1C2E;
   margin-top: 8px;
 }
 
-/* ======== CARDS ======== */
 /* ======== CARDS ======== */
 .container {
   display: flex;
@@ -105,18 +107,17 @@ body {
   border: 4px solid #192A51;
   box-shadow: 5px 6px 0px #192A51;
   transition: 0.4s ease;
-  overflow: hidden;   /* added to keep image inside borders */
+  overflow: hidden;
 }
 
 .city-image {
   width: 100%;
-  height: auto;       /* allows full image display */
-  object-fit: contain; /* shows full image without cropping */
+  height: auto;
+  object-fit: contain;
   border-radius: 18px;
   border: 3px solid #192A51;
   display: block;
 }
-
 
 .card:hover {
   transform: translate(-5px, -5px);
@@ -141,6 +142,8 @@ body {
   font-weight: 600;
   transition: 0.3s;
   color: #0F1C2E;
+  /* ADDED: Font size for team card */
+  font-size: 18px; 
 }
 
 .team-card:hover {
@@ -153,12 +156,14 @@ body {
 footer {
   text-align: center;
   padding: 18px;
-  font-size: 16px;
+  /* MODIFIED: Increased footer font size */
+  font-size: 18px; 
   font-weight: 600;
   background: #192A51;
   border-top: 4px solid #8B9EB7;
   color: #D7BA89;
-} modify 
+} 
+
 /*======BUSINESS IDEAS======*/
 .business-ideas-section {
     text-align: center;
@@ -168,7 +173,8 @@ footer {
 }
 
 .business-ideas-section h2 {
-    font-size: 40px;
+    /* MODIFIED: Increased heading font size */
+    font-size: 48px; 
     margin-bottom: 40px;
     color: #192A51;
     font-weight: bold;
@@ -192,10 +198,10 @@ footer {
 }
 
 .timeline-item {
-    padding: 15px 30px; /* reduced padding */
+    padding: 15px 30px; 
     position: relative;
     width: 50%;
-    margin-bottom: 20px; /* added margin to reduce distance between items */
+    margin-bottom: 20px;
 }
 
 .timeline-item:nth-child(odd) {
@@ -210,7 +216,7 @@ footer {
 .timeline-item::before {
     content: "";
     position: absolute;
-    top: 30px; /* slightly adjusted for new padding */
+    top: 30px; 
     width: 15px;
     height: 15px;
     background: #8B9EB7;
@@ -221,13 +227,15 @@ footer {
 
 .timeline-content {
     background: #FFFFFF;
-    padding: 15px; /* reduced padding */
+    padding: 15px; 
     border-radius: 12px;
     border: 3px solid #192A51;
 }
 
 .timeline-content h3 {
     color: #192A51;
+    /* ADDED: Font size for timeline item headings */
+    font-size: 22px; 
     margin-bottom: 10px;
 }
 
@@ -235,6 +243,8 @@ footer {
     list-style: none;
     padding: 0;
     text-align: left;
+    /* ADDED: Font size for timeline list items */
+    font-size: 18px;
 }
 
 .timeline-content ul li::before {
