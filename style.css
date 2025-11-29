@@ -196,10 +196,10 @@ footer {
 }
 
 .timeline-item {
-    /* KEY CHANGE 1: Reduced vertical padding to just 2px */
-    padding: 2px 40px; 
+    padding: 15px 30px; /* reduced padding */
     position: relative;
     width: 50%;
+    margin-bottom: 20px; /* added margin to reduce distance between items */
 }
 
 .timeline-item:nth-child(odd) {
@@ -214,8 +214,7 @@ footer {
 .timeline-item::before {
     content: "";
     position: absolute;
-    /* KEY CHANGE 2: Adjusted top position to 22px */
-    top: 22px; 
+    top: 30px; /* slightly adjusted for new padding */
     width: 15px;
     height: 15px;
     background: #8B9EB7;
@@ -226,8 +225,7 @@ footer {
 
 .timeline-content {
     background: #FFFFFF;
-    /* KEY CHANGE 3: Reduced internal vertical padding to 10px */
-    padding: 10px 20px; 
+    padding: 15px; /* reduced padding */
     border-radius: 12px;
     border: 3px solid #192A51;
 }
@@ -246,12 +244,4 @@ footer {
 .timeline-content ul li::before {
     content: "• ";
     color: #8B9EB7;
-}
-
-.image-card {
-  border-radius: 0px;
-}
-
-.image-card img {
-  border-radius: 0px;
 }
