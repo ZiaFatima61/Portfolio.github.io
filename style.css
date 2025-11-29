@@ -112,6 +112,11 @@ body {
   align-items: center;
 }
 
+.card {
+  outline: 5px solid red;
+}
+
+
 .card-img {
   width: 100%;
   height: 200px;     /* constant image area */
