@@ -139,6 +139,17 @@ body {
   font-size: 18px;
 }
 
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.course-details {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
 
 
 /* ======== TEAM SECTION ======== */
