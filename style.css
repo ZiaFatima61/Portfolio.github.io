@@ -112,13 +112,10 @@ body {
 
 .city-image {
   width: 100%;
-  height: 100%;
-  object-fit: contain;   /* Fit image perfectly inside */
-  border-radius: 18px;
+  height: 420px;
+  object-fit: contain; /* shows full image */
   border: 3px solid #192A51;
 }
-
-
 
 
 .card:hover {
@@ -264,4 +261,12 @@ footer {
 .timeline-content ul li::before {
     content: "• ";
     color: #8B9EB7;
+}
+
+.image-card {
+  border-radius: 0px;
+}
+
+.image-card img {
+  border-radius: 0px;
 }
