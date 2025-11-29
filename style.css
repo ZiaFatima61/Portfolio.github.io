@@ -106,16 +106,43 @@ body {
   transition: 0.4s ease;
 }
 
+/* ======== CARDS (Modified) ======== */
+
+/* This is the general image styling from your code, keeping it for other cards */
 .card-img {
-  width: 100%;
-  height: 260px;      
-  object-fit: cover;  
-  border-radius: 18px;
-  margin-bottom: 15px;
-  border: 3px solid #192A51;
+  width: 100%;
+  /* height: 260px; <-- REMOVED or MODIFIED for better responsiveness/fit */
+  height: auto; /* Ensure aspect ratio is maintained */
+  object-fit: contain; /* Scales the content to fit entirely within the parent box */
+  border-radius: 18px;
+  margin-bottom: 15px;
+  border: 3px solid #192A51;
 }
 
+/* This targets the specific image in your HTML: <img src="City.jpeg" alt="Vistara City" class="city-image" /> */
+.city-image {
+  /* Ensure it inherits the properties above or explicitly set them */
+  width: 100%;
+  height: 100%; /* Use 100% to fill the height of the parent container */
+  object-fit: contain; /* Key to fitting the whole image */
+  border-radius: 18px; /* Maintain style */
+  border: 3px solid #192A51; /* Maintain style */
+}
 
+/* Add this new block to your CSS */
+.image-card {
+  /* Assuming you want the image card to be roughly the same height as the details card */
+  height: 500px; /* Adjust this value as needed for the best look */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  padding: 15px; /* Adjust padding to give the image more space */
+}
+
+/* The adjacent card needs to match the height if possible for a clean layout, or remove the 'height' on both and let the height of the content drive it. */
+.details {
+    height: 500px; /* Match this height with .image-card */
+}
 .card:hover {
   transform: translate(-5px, -5px);
   box-shadow: 10px 12px 0px #8B9EB7;
