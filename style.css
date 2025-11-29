@@ -163,3 +163,87 @@ footer {
   border-top: 4px solid #8B9EB7;
   color: #D7BA89;
 }
+/*======BUSINESS IDEAS======*/
+.business-ideas-section {
+    text-align: center;
+    background-color: #D7BA89;
+    padding: 50px 20px;
+    color: #192A51;
+}
+
+.business-ideas-section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #192A51;
+    font-weight: bold;
+}
+
+.timeline {
+    position: relative;
+    margin: auto;
+    padding: 10px 0;
+    width: 70%;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #192A51;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    /* KEY CHANGE 1: Reduced vertical padding to just 2px */
+    padding: 2px 40px; 
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    /* KEY CHANGE 2: Adjusted top position to 22px */
+    top: 22px; 
+    width: 15px;
+    height: 15px;
+    background: #8B9EB7;
+    border-radius: 50%;
+    border: 3px solid #192A51;
+    left: calc(-7px - 4px);
+}
+
+.timeline-content {
+    background: #FFFFFF;
+    /* KEY CHANGE 3: Reduced internal vertical padding to 10px */
+    padding: 10px 20px; 
+    border-radius: 12px;
+    border: 3px solid #192A51;
+}
+
+.timeline-content h3 {
+    color: #192A51;
+    margin-bottom: 10px;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.timeline-content ul li::before {
+    content: "• ";
+    color: #8B9EB7;
+}
