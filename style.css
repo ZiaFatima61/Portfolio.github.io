@@ -155,6 +155,30 @@ body {
   transform: scale(1.05);
 }
 
+.github-btn-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.github-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 22px;
+  font-weight: 700;
+   color:  #fff; 
+  background-color: #192A51;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 3px solid #0F1626;
+  transition: 0.3s ease;
+}
+
+.github-btn:hover {
+  transform: scale(1.07);
+  background-color: #2A3B61;
+}
+
+
 /* ======== FOOTER ======== */
 footer {
   text-align: center;
