@@ -10,9 +10,6 @@ body {
   background: #D7BA89;  /* Light beige background */
   color: #0F1C2E;       /* Dark navy text */
   padding: 0;
-  /* MODIFIED: Increased base font size */
-  font-size: 23px; 
-  line-height: 1.6; 
 }
 
 
@@ -20,16 +17,16 @@ body {
   margin: 10px 60px 8px 60px; /* reduce top space */
   text-align: center;
   /* MODIFIED: Increased text font size */
-  font-size: 23px; 
+  font-size: 18px; 
   font-weight: 600;
   color: #192A51;
-  line-height: 1.6;
+  line-height: 1.5;
   white-space: pre-line;
 }
 
 .intro-text strong {
   /* MODIFIED: Increased strong (heading) font size */
-  font-size: 28px; 
+  font-size: 24px; 
   font-weight: 800;
   display: block;
   margin-bottom: 0px; /* small spacing */
