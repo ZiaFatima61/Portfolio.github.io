@@ -11,8 +11,10 @@ body {
   color: #0F1C2E;       /* Dark navy text */
   padding: 0;
   /* MODIFIED: Increased base font size */
-  font-size: 20px; 
+  font-size: 23px; 
+  line-height: 1.6; 
 }
+
 
 .intro-text {
   margin: 20px 60px 8px 60px;
