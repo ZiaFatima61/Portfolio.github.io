@@ -15,8 +15,9 @@ body {
   line-height: 1.6; 
 }
 
+
 .intro-text {
-  margin: 20px 60px 8px 60px;
+  margin: 10px 60px 8px 60px; /* reduce top space */
   text-align: center;
   /* MODIFIED: Increased text font size */
   font-size: 23px; 
@@ -31,7 +32,7 @@ body {
   font-size: 28px; 
   font-weight: 800;
   display: block;
-  margin-bottom: 6px; /* small spacing */
+  margin-bottom: 0px; /* small spacing */
   color: #192A51;
 }
 
