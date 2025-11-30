@@ -238,8 +238,8 @@ footer {
 .timeline-content h3 {
     color: #192A51;
     /* ADDED: Font size for timeline item headings */
-    font-size: 22px; 
-    margin-bottom: 10px;
+    font-size: 18px; 
+    margin-bottom: 8px;
 }
 
 .timeline-content ul {
@@ -247,7 +247,7 @@ footer {
     padding: 0;
     text-align: left;
     /* ADDED: Font size for timeline list items */
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .timeline-content ul li::before {
