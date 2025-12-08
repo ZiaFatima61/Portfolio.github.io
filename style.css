@@ -348,17 +348,4 @@ body {
 
 }
 
-/*sushmita*/
-.diagram-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-}
 
-.diagram-img {
-    width: 100%;
-    max-width: 900px;   /* adjust size */
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
-}
