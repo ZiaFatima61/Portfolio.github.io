@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>City Design Project</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="portfolio-page">
 
 <section class="hero">
   <nav class="navbar glass">
-    <h1 class="logo">  CITY DESIGN</h1>
+    <h1 class="logo">CITY DESIGN</h1>
     <div class="nav-links">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,3 +24,182 @@
       </ul>
     </div>
   </nav>
+</section>
+
+<section class="case-study">
+
+  <div id="Shopping Mall Management" class="case-block">
+
+    <h2 class="idea-title">Shopping Mall Management</h2>
+    <p class="idea-summary">
+      It cover navigation, parking, inventory, local business promotions, personalised user experience, crowd management, safety and customer service.
+    </p>
+    
+     <div class="case-section">
+      <h3>SDG Alignment</h3>
+      <ul>
+        <li>SDG 8 – Decent Work & Economic Growth</li>
+        <li>SDG 9 – Industry, Innovation & Infrastructure</li>
+        <li>SDG 11 – Sustainable Cities & Communities</li>
+        <li>SDG 12 – Responsible Consumption & Production</li>
+      </ul>
+    </div>
+
+
+    <div class="case-section">
+      <h3>Problems faced by people</h3>
+      <ul>
+        <li>Lack of Store Information & Poor Navigation</li>
+        <li>Lack of Parking Management & Vehicle Flow</li>
+        <li>Poor Promotion of Local Stores & Offers</li>
+        <li>Lack of Personalized Customer Experience</li>
+        <li>Safety & Emergency Response Systems</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3>Implementation Steps (ADs)</h3>
+      <ul>
+        <li>Use of Hash Map to instantly find store details, fast vehicle search and store preferences</li>
+        <li>Dijkstra - fastest path to store and nearest emergency exit</li>
+        <li>Min Heap & Segment tree - Find nearest empty slot & free slot count</li>
+        <li>Max Heap - Show trending shops</li>
+        <li>Trie - Product categorization</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div id="Forest fire" class="case-block">
+
+    <h2 class="idea-title">Smart Forest Fire Detection System</h2>
+    <p class="idea-summary">
+      A forest is divided into zones, and each zone has sensors.<br />
+      We treat the forest as a graph and the fire behavior as a pathfinding and pattern detection problem.
+    </p>
+    
+    <div class="case-section">
+      <h3>SDG Alignment</h3>
+      <ul>
+        <li>SDG 11 – Sustainable Cities and Communities</li>
+        <li>SDG 13 – Climate Action</li>
+        <li>SDG 15 – Life on Land</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3>Implementation Steps (ADs)</h3>
+      <ul>
+        <li>The entire forest is represented as a graph (BFS/DFS) - Nodes as Sensor locations,
+            Edges as Connectivity between sensor nodes,
+            Weights as Distance, vegetation difficulty, or fire spread time
+        </li>
+        <li>Priority Queue - Used to prioritize highest temperature nodes, areas with maximum smoke, fastest fire-spreading zones</li>
+        <li>Circular Queue - Used to store continuous sensor readings</li>
+        <li>Binary Search Tree - Used to maintain sorted order of risk levels</li>
+        <li>Dijkstra’s Algorithm - Used for finding shortest path for firefighters and nearest water source location</li>
+        <li>Minimum Spanning Tree (Prim's) - Used to connect sensors with minimum wiring cost, reduce communication links, Optimize maintenance routes</li>
+      </ul>
+    </div>
+     <div class="case-section">
+      <h3>Impact :</h3>
+      <p class="idea-summary">
+         Using data structures and algorithms—like sensor data trees, graph-based alert networks, and pattern-detection algorithms—the smart fire detection system identifies fires early and sends alerts quickly. This reduces response time, prevents large-scale forest damage, and protects wildlife, nearby communities, and natural resources. Overall, it creates a safer, more resilient, and environmentally sustainable forest ecosystem.
+      </p>
+      </div>
+
+  </div>
+  
+   <div id="Tourism" class="case-block">
+
+    <h2 class="idea-title">Tourism Management</h2>
+    <p class="idea-summary">
+      It cover navigation, parking, inventory, local business promotions, personalised user experience, crowd management, safety and customer service.
+    </p>
+    
+     <div class="case-section">
+      <h3>SDG Alignment</h3>
+      <ul>
+        <li>SDG 8 – Decent Work & Economic Growth</li>
+        <li>SDG 9 – Industry, Innovation & Infrastructure</li>
+        <li>SDG 11 – Sustainable Cities & Communities</li>
+        <li>SDG 12 – Responsible Consumption & Production</li>
+        <li>SDG 17 – Partnerships for the Goals (Indirect)</li>
+      </ul>
+    </div>
+
+
+    <div class="case-section">
+      <h3>System Requirements</h3>
+      <ul>
+        <li>Hotel & Resort Booking Optimization</li>
+        <li>Tourism Recommendation System</li>
+        <li>Transport & Route Optimization</li>
+        <li>Digital Ticketing & Pass Management</li>
+        <li>Environmental & Heritage Protection</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3>Implementation Steps (ADs)</h3>
+      <ul>
+        <li>AVL Tree - To sort price list</li>
+        <li>Hash Map - To store booking details</li>
+        <li>Greedy Algorithm - To allocate best available room quickly</li>
+        <li>Backtracking - To handle overbooking scenarios</li>
+        <li>Sorting + Binary Search - To suggest activities in order</li>
+        <li>ArrayList (linked list) - To store visit history</li>
+        <li>Floyd–Warshall - All pairs shortest paths for route optimization</li>
+        <li>Hash Map, Queue, Stack - To store pass info, ticket counters (queue), To undo operations (stack)</li>
+        <li>Sorting - To arrange visitors by entry time</li>
+        <li>DFS - To detect abnormal activities in forests</li>
+        <li>Pattern Recognition Rabin-Karp - To detect illegal activities from logs</li>
+      </ul>
+    </div>
+
+  </div>
+ <div id="Water and electricity" class="case-block">
+
+    <h2 class="idea-title">Smart Water And Electricity System</h2>
+   
+    <div class="case-section">
+      <h3>SDG Alignment</h3>
+      <ul>
+        <li>SDG 6 – Clean Water and Sanitation</li>
+        <li>SDG 7 – Affordable and Clean Energy</li>
+        <li>SDG 9 – Industry, Innovation & Infrastructure</li>
+        <li>SDG 11 – Sustainable Cities and Communities</li>
+      </ul>
+    </div>
+
+    <div class="case-section">
+      <h3>Implementation Steps (ADs)</h3>
+         <p>Smart Water Management system :</p>
+      <ul>
+        <li>Model water pipelines as a Directed Weighted Graph</li>
+        <li>Use Floyd–Warshall Algorithm to detect inefficient water routes and compute all-pair shortest flow paths</li>
+        <li>Apply Union–Find (Disjoint Set) to identify connected and disconnected water supply regions</li>
+        <li>Store water consumption logs in a Binary Search Tree (BST) for fast range queries</li>
+      </ul>
+      <p>Smart Electricity Distribution System :</p>
+      <ul>
+        <li>Represent electrical grid circuits as a Graph with weighted edges for voltage/resistance</li>
+        <li>Use Bellman–Ford Algorithm to detect power fluctuations or negative-cycle faults in the grid</li>
+        <li>Apply Segment Trees to manage and query electricity usage across different time intervals</li>
+        <li>Store outage reports and repair tasks in a Circular Queue for efficient rotation and handling</li>
+      </ul>
+    </div>
+     <div class="case-section">
+      <h3>Impact :</h3>
+      <p class="idea-summary">
+         The integrated system improves resource efficiency by reducing leakages, energy loss, and service interruptions. Real-time monitoring ensures reliable delivery, while optimized distribution lowers operational costs and supports sustainable city growth. Together, they make essential utilities smarter, cleaner, and more resilient.
+      </p>
+      </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
