@@ -294,19 +294,22 @@ These mirror shortest-path and MST concepts.
 
 </body>
 </html>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Based Personalized Learning Apps</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #D8B98B; /* Page background from screenshot */
+            background-color: #D8B98B;
             color: #333;
         }
         .container {
@@ -327,30 +330,58 @@ These mirror shortest-path and MST concepts.
         ul {
             margin-left: 20px;
         }
-        code {
-            background-color: #eaeaea;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
         .algorithm {
             background-color: #f0f8ff;
             padding: 10px;
             margin: 10px 0;
             border-left: 4px solid #3498db;
         }
+
+        /* Glow Buttons */
+        .glow-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .glow-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(145deg, #ff416c, #ff4b2b);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ff416c, 0 0 40px #ff4b2b;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+        .glow-circle:hover {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 0 30px #ff416c, 0 0 60px #ff4b2b;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
+
         <h1>AI-Based Personalized Learning Apps</h1>
-        <div style="text-align: center; margin: 20px 0;">
-    <img src="https://raw.githubusercontent.com/ZiaFatima61/Portfolio.github.io/main/Screenshot%202025-12-08%20214024.png"
-         alt="Screenshot"
-         style="width: 70%; max-width: 800px; border-radius: 12px; display: inline-block;">
-</div>
+
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/ZiaFatima61/Portfolio.github.io/main/Screenshot%202025-12-08%20214024.png"
+                 alt="LMS Image"
+                 style="width: 70%; max-width: 800px; border-radius: 12px;">
+        </div>
 
         <p>
-            AI-Based Personalized Learning Apps are becoming essential in modern education systems because they provide customized learning paths for students based on their performance, speed, and understanding levels. This promotes better learning outcomes, reduces unnecessary workload, and ensures every learner receives guidance tailored specifically to their needs. These apps not only enhance student engagement but also support teachers by automating assessments and progress tracking.
+            AI-Based Personalized Learning Apps provide customized learning paths for students based on their performance,
+            speed, and understanding levels. These apps enhance learning outcomes and reduce teacher workload.
         </p>
 
         <h2>Importance of Algorithms in Personalized Learning</h2>
@@ -363,146 +394,85 @@ These mirror shortest-path and MST concepts.
 
         <h3>Skill Development</h3>
         <ul>
-            <li>Identifying weak and strong areas</li>
-            <li>Suggesting relevant practice modules</li>
-            <li>Optimizing revision schedules</li>
+            <li>Identify weak and strong areas</li>
+            <li>Suggest relevant practice modules</li>
+            <li>Optimize revision schedules</li>
         </ul>
 
-        <h2>Algorithms and Techniques Used</h2>
-
+        <!-- Algorithms Section -->
         <div class="algorithm">
             <h3>1. Graph Algorithms for Learning Path Optimization</h3>
             <h4>Dijkstra’s Algorithm – Shortest Learning Route</h4>
             <ul>
-                <li>Helps create the most efficient learning sequence for each student</li>
-                <li>Each topic is a node; edges represent difficulty or required time</li>
-                <li>Minimizes time to complete a course, recommends the next chapter, avoids unnecessary jumps</li>
-                <li>Efficiency: O(|E| log |V|)</li>
-               <h4>Prim’s Algorithm – Concept Link Minimization</h4>
+                <li>Creates the most efficient chapter-learning sequence</li>
+                <li>Nodes = Topics; edges = difficulty/time</li>
+            </ul>
+
+            <h4>Prim’s Algorithm – Concept Link Minimization</h4>
             <ul>
-                <li>Structures the curriculum as a connected network with minimum conceptual cost</li>
-                <li>Reduces redundancy, builds clear learning maps</li>
-                <li>Efficiency: O(|E| log |V|)</li>
+                <li>Removes redundant concepts and builds clean learning maps</li>
             </ul>
         </div>
 
         <div class="algorithm">
-            <h3>2. Sorting Algorithms for Organizing Learning Data</h3>
+            <h3>2. Sorting Algorithms</h3>
             <ul>
-                <li>Organizes topic difficulty levels, student rankings, priority-based content, and recommended activities</li>
-                <li>Efficiencies: Quick Sort → O(n log n), Merge Sort → O(n log n), Heap Sort → O(n log n)</li>
+                <li>Organizes difficulty levels, rankings, and priority content</li>
             </ul>
         </div>
 
         <div class="algorithm">
-            <h3>3. Pattern Matching and Machine Intelligence</h3>
+            <h3>3. Pattern Matching & Machine Intelligence</h3>
             <ul>
-                <li><strong>Pattern Matching:</strong> Detects student error patterns, maps mistakes to concepts, creates automatic feedback</li>
-                <li><strong>Machine Learning Classifiers:</strong> Predicts which topic a student might struggle with, recommends next lesson or quiz, adjusts difficulty adaptively</li>
+                <li>Detects student error patterns</li>
+                <li>Predicts weak topics</li>
             </ul>
         </div>
 
         <div class="algorithm">
-            <h3>4. Backtracking for Adaptive Question Correction</h3>
+            <h3>4. Backtracking for Adaptive Correction</h3>
             <ul>
-                <li>Analyzes how a student reached a wrong answer</li>
-                <li>Generates step-by-step hints, identifies misunderstandings, creates personalized corrective exercises</li>
+                <li>Analyzes student mistake paths</li>
+                <li>Generates correction hints</li>
             </ul>
         </div>
 
         <div class="algorithm">
-            <h3>5. Lookup Table for Fast Retrieval</h3>
+            <h3>5. Lookup Table</h3>
             <ul>
-                <li>Stores pre-computed values like past scores, time spent, difficulty ratings, user preferences</li>
-                <li>Ensures instant access during recommendations and analysis (Efficiency: O(1))</li>
+                <li>Used for instant data retrieval</li>
             </ul>
         </div>
 
         <div class="algorithm">
-            <h3>6. BIT / Fenwick Tree for Performance Tracking</h3>
+            <h3>6. Fenwick Tree (BIT)</h3>
             <ul>
-                <li>Efficient for range-based queries like total study time or scores over multiple tests</li>
-                <li>Simpler than Segment Tree, less memory, perfect for prefix-sum style analytics</li>
-                <li>Efficiency: O(log n)</li>
+                <li>Fast performance tracking using prefix sums</li>
             </ul>
         </div>
-        <!-- Container for all code buttons -->
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-       </ul>
-    <!-- Floating 3D Glowing Circle for Dijkstra Algorithm -->
-<a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/Dijkstra.cpp" 
-   target="_blank" class="glow-circle">
-    Dijkstra C++ Code
-</a>
+        <!-- C++ Code Buttons -->
+        <div class="glow-container">
+            <a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/Dijkstra.cpp" class="glow-circle">Dijkstra</a>
+            <a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/Prims.cpp" class="glow-circle">Prim's</a>
+            <a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/Sorting.cpp" class="glow-circle">Sorting</a>
+            <a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/PatternMatching.cpp" class="glow-circle">Pattern</a>
+            <a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/LookupTable.cpp" class="glow-circle">Lookup</a>
+            <a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/FenwickTree.cpp" class="glow-circle">Fenwick</a>
+        </div>
 
-<!-- Prim's Algorithm -->
-<a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/Prims.cpp" 
-   target="_blank" class="glow-circle">
-    Prim's Algorithm
-</a>
-
-<!-- Sorting Algorithms -->
-<a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/Sorting.cpp" 
-   target="_blank" class="glow-circle">
-    Sorting Algorithms
-</a>
-
-<!-- Pattern Matching -->
-<a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/PatternMatching.cpp" 
-   target="_blank" class="glow-circle">
-    Pattern Matching
-</a>
-
-<!-- Lookup Table -->
-<a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/LookupTable.cpp" 
-   target="_blank" class="glow-circle">
-    Lookup Table
-</a>
-
-<!-- Fenwick Tree -->
-<a href="https://github.com/sushmitacs256/DSA-CPP-CODE/blob/main/FenwickTree.cpp" 
-   target="_blank" class="glow-circle">
-    Fenwick Tree
-</a>
-
-<style>
-.glow-circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(145deg, #ff416c, #ff4b2b);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #ff416c, 0 0 40px #ff4b2b, 0 0 60px #ff416c;
-    transition: transform 0.3s, box-shadow 0.3s;
-    font-size: 14px;
-    margin: 20px;
-}
-
-.glow-circle:hover {
-    transform: translateY(-10px) scale(1.1);
-    box-shadow: 0 0 30px #ff416c, 0 0 60px #ff4b2b, 0 0 90px #ff416c;
-}
-</style>
-    
-    <h2>Overall Benefits</h2>
+        <h2>Overall Benefits</h2>
         <ul>
-            <li>Smarter and faster personalized learning</li>
-            <li>Better accuracy in recommendations</li>
-            <li>Efficient tracking of student growth</li>
-            <li>Dynamic content adjustment</li>
-            <li>Reduced workload for teachers</li>
-            <li>Enhanced learning outcomes for students</li>
+            <li>Smarter personalized learning</li>
+            <li>Better recommendation accuracy</li>
+            <li>Efficient student tracking</li>
+            <li>Dynamic difficulty adjustment</li>
+            <li>Reduced teacher workload</li>
         </ul>
+
     </div>
 </body>
-</html
+</html>
 
 
 
