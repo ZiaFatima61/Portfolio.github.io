@@ -24,18 +24,20 @@
       </ul>
     </div>
   </nav>
-</section>
-
 <section class="case-study">
 
-  <div id="Shopping Mall Management" class="case-block">
+  <div id="pageToggle" style="text-align:center; margin-bottom: 30px;">
+    <button onclick="togglePage('shoppingMall')">SHOPPING MALL</button>
+    <button onclick="togglePage('forestFire')">FOREST FIRE</button>
+    <button onclick="togglePage('tourism')">TOURISM</button>
+    <button onclick="togglePage('waterElectricity')">WATER & ELECTRICITY</button>
+  </div>
 
+  <div id="shoppingMall" class="case-block" style="display: block;">
     <h2 class="idea-title">Shopping Mall Management</h2>
-    <p class="idea-summary">
-      It cover navigation, parking, inventory, local business promotions, personalised user experience, crowd management, safety and customer service.
-    </p>
-    
-     <div class="case-section">
+    <p>The management of a shopping mall can be broken down into different parts, including Store & Tenant Management, Visitor Navigation & Flow Management, and Mall Inventory & Product Search.</p>
+
+    <div class="case-section">
       <h3>SDG Alignment</h3>
       <ul>
         <li>SDG 8 – Decent Work & Economic Growth</li>
@@ -45,39 +47,99 @@
       </ul>
     </div>
 
-
     <div class="case-section">
-      <h3>Problems faced by people</h3>
+      <h3>Store & Tenant Management</h3>
+      <h4>What is required</h4>
       <ul>
-        <li>Lack of Store Information & Poor Navigation</li>
-        <li>Lack of Parking Management & Vehicle Flow</li>
-        <li>Poor Promotion of Local Stores & Offers</li>
-        <li>Lack of Personalized Customer Experience</li>
-        <li>Safety & Emergency Response Systems</li>
+        <li>A digital Tenant Management System</li>
+        <li>Automated shop allocation system</li>
+        <li>Contract & rent tracking dashboard</li>
+        <li>Store Connectivity & Utility Planning</li>
       </ul>
     </div>
 
     <div class="case-section">
-      <h3>Implementation Steps (ADs)</h3>
+      <h3>Implementation Steps</h3>
       <ul>
-        <li>Use of Hash Map to instantly find store details, fast vehicle search and store preferences</li>
-        <li>Dijkstra - fastest path to store and nearest emergency exit</li>
-        <li>Min Heap & Segment tree - Find nearest empty slot & free slot count</li>
-        <li>Max Heap - Show trending shops</li>
-        <li>Trie - Product categorization</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">AVL Tree</a> - to store tenant and shop details using the unique Shop ID as the key, enabling efficient lookup while maintaining sorted order.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Priority Queue (Max-Heap)</a> - For automated shop allocation.
+Shops or tenants are prioritized based on factors like demand, rent range, footfall zone, or business category.best available shop first, making allocation fast, fair, and optimized.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree</a> -  To manage shop contracts sorted by expiry dates.
+It helps the system quickly access the earliest expiring contract, insert new ones, or update the existing ones in O(log n) time.
+This ensures smooth contract renewals and timely notifications.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Linked Lists</a> - To maintain shop lists. Shops on each floor or zone are stored as nodes in a linked list (shop ID, tenant, category, status).
+It allows the system to add new shops, remove tenants, or mark vacancies in O(1) time without shifting elements like in arrays.
+This ensures smooth handling of frequent shop changes, making vacancy updates fast and flexible.</li>
+<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Kruskal’s Algorithm</a> - To find minimum cost network (wiring, security lines, Wi-Fi).</li>
+<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Red-Black Tree</a> - To organize stores into floors and zones, allowing fast and efficient store lookup and management.</li>
       </ul>
     </div>
+    <div class="case-section">
+      <h3>Visitor Navigation & Flow Management</h3>
+      <h4>What is required</h4>
+      <ul>
+        <li>A digital mall map shop locator</li>
+        <li>floor navigation system</li>
+        <li>Crowd-flow heatmap display</li>
+      </ul>
+    </div>
+    <div class="case-section">
+      <h3>Implementation Steps</h3>
+      <ul>
+        <li>Graphs -  To model the mall layout because each shop, corridor, floor, and escalator can be represented as nodes and edges.
+This allows us to simulate real-world movement inside the mall.This allows instant O(1) lookup, useful for tasks like:
+“Who is in shop S105?” or “Show details of shop S220.”
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">BFS</a> - To provide the shortest walking path on the same floor.
+BFS ensures quick, unweighted pathfinding such as “Find Shop A → Shop B” within a floor.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Dijkstra’s Algorithm</a> - For multi-floor navigation where edges (elevators, escalators) have different weights.
+This gives the most efficient route considering distance, waiting time, and convenience.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Trie</a> - To locate shops and facilities based on name or prefix efficiently.</li>
+ <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer"> Max-Heap</a> - To identify the most crowded zones in real-time.
+The zone with the highest crowd count always rises to the top, helping in crowd control planning.
+</li>
+      </ul>
+    </div>
+    <div class="case-section">
+      <h3>Mall Inventory & Product Search </h3>
+      <h4>What to build</h4>
+      <ul>
+        <li>A product search system for mall-wide stores</li>
+        <li>Product availability dashboard</li>
+        <li>Smart restocking</li>
+        <li>Trending Product Detection System</li>
+      </ul>
+    </div>
+    <div class="case-section">
+      <h3>Implementation Steps</h3>
+      <ul>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Trie</a> - To give instant auto-suggestions for product names.
+This helps users type "nic" and instantly get “Nike”, “Nicolas Perfume”, etc.</li>
+<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">KMP Algorithm</a> - Used to efficiently search exact product names in large catalogs.</li>
+<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Boyer–Moore Algorithm</a> - used for fast keyword search in long product descriptions and reviews.</li>
+<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Lookup Table</a> - allow instant access from a keyword to related products.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search</a> - On sorted product lists to instantly check if a product exists in a specific shop.
+This gives O(log n) search time.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Merge Sort</a> - To sort products by price, brand, or popularity.
+This creates smooth and efficient product filtering in the mall app.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Hash Maps</a> - To store product availability for every store.
+Example: “Is this product available in Store S110?” → instant lookup.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Fenwick Tree</a> - To  track frequency of product purchases.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Heap Sort</a> - To find top-k trending products.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Sparse Table</a> - To quickly analyze product sales trends over different time ranges (daily/weekly)</li>
+      </ul>
+    </div>
+  </div>  
 
-  </div>
-
-  <div id="Forest fire" class="case-block">
-
+  <div id="forestFire" class="case-block" style="display: none;">
     <h2 class="idea-title">Smart Forest Fire Detection System</h2>
     <p class="idea-summary">
       A forest is divided into zones, and each zone has sensors.<br />
       We treat the forest as a graph and the fire behavior as a pathfinding and pattern detection problem.
     </p>
-    
+
     <div class="case-section">
       <h3>SDG Alignment</h3>
       <ul>
@@ -88,36 +150,34 @@
     </div>
 
     <div class="case-section">
-      <h3>Implementation Steps (ADs)</h3>
+      <h3>Implementation Steps </h3>
       <ul>
-        <li>The entire forest is represented as a graph (BFS/DFS) - Nodes as Sensor locations,
+        <li>The entire forest is represented as a graph <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">(BFS/DFS)</a> - Nodes as Sensor locations,
             Edges as Connectivity between sensor nodes,
             Weights as Distance, vegetation difficulty, or fire spread time
         </li>
-        <li>Priority Queue - Used to prioritize highest temperature nodes, areas with maximum smoke, fastest fire-spreading zones</li>
-        <li>Circular Queue - Used to store continuous sensor readings</li>
-        <li>Binary Search Tree - Used to maintain sorted order of risk levels</li>
-        <li>Dijkstra’s Algorithm - Used for finding shortest path for firefighters and nearest water source location</li>
-        <li>Minimum Spanning Tree (Prim's) - Used to connect sensors with minimum wiring cost, reduce communication links, Optimize maintenance routes</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Priority Queue</a> - Used to prioritize highest temperature nodes, areas with maximum smoke, fastest fire-spreading zones</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Circular Queue</a> - Used to store continuous sensor readings</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree</a> - Used to maintain sorted order of risk levels</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Dijkstra’s Algorithm</a> - Used for finding shortest path for firefighters and nearest water source location</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Minimum Spanning Tree (Prim's) </a> - Used to connect sensors with minimum wiring cost, reduce communication links, Optimize maintenance routes</li>
       </ul>
     </div>
-     <div class="case-section">
+    <div class="case-section">
       <h3>Impact :</h3>
       <p class="idea-summary">
          Using data structures and algorithms—like sensor data trees, graph-based alert networks, and pattern-detection algorithms—the smart fire detection system identifies fires early and sends alerts quickly. This reduces response time, prevents large-scale forest damage, and protects wildlife, nearby communities, and natural resources. Overall, it creates a safer, more resilient, and environmentally sustainable forest ecosystem.
       </p>
-      </div>
-
+    </div>
   </div>
-  
-   <div id="Tourism" class="case-block">
 
+  <div id="tourism" class="case-block" style="display: none;">
     <h2 class="idea-title">Tourism Management</h2>
     <p class="idea-summary">
       It cover navigation, parking, inventory, local business promotions, personalised user experience, crowd management, safety and customer service.
     </p>
-    
-     <div class="case-section">
+
+    <div class="case-section">
       <h3>SDG Alignment</h3>
       <ul>
         <li>SDG 8 – Decent Work & Economic Growth</li>
@@ -127,7 +187,6 @@
         <li>SDG 17 – Partnerships for the Goals (Indirect)</li>
       </ul>
     </div>
-
 
     <div class="case-section">
       <h3>System Requirements</h3>
@@ -141,27 +200,46 @@
     </div>
 
     <div class="case-section">
-      <h3>Implementation Steps (ADs)</h3>
+      <h3>Implementation Steps </h3>
       <ul>
-        <li>AVL Tree - To sort price list</li>
-        <li>Hash Map - To store booking details</li>
-        <li>Greedy Algorithm - To allocate best available room quickly</li>
-        <li>Backtracking - To handle overbooking scenarios</li>
-        <li>Sorting + Binary Search - To suggest activities in order</li>
-        <li>ArrayList (linked list) - To store visit history</li>
-        <li>Floyd–Warshall - All pairs shortest paths for route optimization</li>
-        <li>Hash Map, Queue, Stack - To store pass info, ticket counters (queue), To undo operations (stack)</li>
-        <li>Sorting - To arrange visitors by entry time</li>
-        <li>DFS - To detect abnormal activities in forests</li>
-        <li>Pattern Recognition Rabin-Karp - To detect illegal activities from logs</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">AVL Tree</a> -To sort price list
+We use an AVL Tree to maintain hotel and resort prices in sorted order, ensuring quick updates and efficient searching for budget-friendly options.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Hash Maps</a> - To store booking details
+Customer bookings, room IDs, dates, and payment status are stored in a Hash Map for O(1) access during check-ins and cancellations.
+</li>
+        <li>Greedy Algorithm - To allocate best available room quickly
+The system picks the optimal available room (closest match to price, view, or preference) without checking all combinations, ensuring fast confirmation.</li>
+        <li>Backtracking -  To handle overbooking scenarios
+When double bookings occur, backtracking helps explore alternate room combinations and rearrange assignments to avoid conflicts.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Quick Sort</a> + <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer"> Binary Search</a>-  To suggest activities in order
+Activities are sorted by time, popularity, or category. Binary search helps the system quickly suggest suitable activities based on user preferences.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">ArrayList (linked list)</a>- To store visit history
+A dynamic list stores each tourist’s visited places in sequence, allowing quick addition and easy retrieval for recommendations.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a>- All pairs shortest paths for route optimization
+This algorithm computes the shortest travel route between every pair of tourist spots, helping in planning a complete day-wise itinerary.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Hash Map, Queue, Stack</a>- To store pass info, ticket counters (queue), undo operations (stack)
+Hash Maps store pass details, Queues manage visitors waiting at ticket counters, and Stacks help undo booking or navigation actions.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Merge Sort </a> - To arrange visitors by entry time
+Visitors entering at different times are sorted to ensure smooth crowd control and during peak-hour analytics.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">DFS</a> - To detect abnormal activities in forests
+DFS traverses forest surveillance data to identify unusual movements or missing sensor signals, supporting wildlife protection.
+</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Pattern Recognition Rabin-Karp  </a>– To detect illegal activities from logs
+Rabin–Karp quickly searches large logs for suspicious keywords or repeated illegal patterns in travel records.</li>
       </ul>
     </div>
-
   </div>
- <div id="Water and electricity" class="case-block">
 
+  <div id="waterElectricity" class="case-block" style="display: none;">
     <h2 class="idea-title">Smart Water And Electricity System</h2>
-   
+
     <div class="case-section">
       <h3>SDG Alignment</h3>
       <ul>
@@ -173,33 +251,33 @@
     </div>
 
     <div class="case-section">
-      <h3>Implementation Steps (ADs)</h3>
-         <p>Smart Water Management system :</p>
+      <h3>Implementation Steps </h3>
+      <p>Smart Water Management system :</p>
       <ul>
         <li>Model water pipelines as a Directed Weighted Graph</li>
-        <li>Use Floyd–Warshall Algorithm to detect inefficient water routes and compute all-pair shortest flow paths</li>
-        <li>Apply Union–Find (Disjoint Set) to identify connected and disconnected water supply regions</li>
-        <li>Store water consumption logs in a Binary Search Tree (BST) for fast range queries</li>
+        <li>Use <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a> Algorithm to detect inefficient water routes and compute all-pair shortest flow paths</li>
+        <li>Apply <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Union–Find (Disjoint Set)</a> to identify connected and disconnected water supply regions</li>
+        <li>Store water consumption logs in a <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree (BST)</a> for fast range queries</li>
       </ul>
       <p>Smart Electricity Distribution System :</p>
       <ul>
         <li>Represent electrical grid circuits as a Graph with weighted edges for voltage/resistance</li>
-        <li>Use Bellman–Ford Algorithm to detect power fluctuations or negative-cycle faults in the grid</li>
-        <li>Apply Segment Trees to manage and query electricity usage across different time intervals</li>
-        <li>Store outage reports and repair tasks in a Circular Queue for efficient rotation and handling</li>
+        <li>Use <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Bellman–Ford</a> Algorithm to detect power fluctuations or negative-cycle faults in the grid</li>
+        <li>Apply <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Segment Trees</a> to manage and query electricity usage across different time intervals</li>
+        <li>Store outage reports and repair tasks in a <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Circular Queue</a> for efficient rotation and handling</li>
       </ul>
     </div>
-     <div class="case-section">
+    <div class="case-section">
       <h3>Impact :</h3>
       <p class="idea-summary">
          The integrated system improves resource efficiency by reducing leakages, energy loss, and service interruptions. Real-time monitoring ensures reliable delivery, while optimized distribution lowers operational costs and supports sustainable city growth. Together, they make essential utilities smarter, cleaner, and more resilient.
       </p>
-      </div>
-
+    </div>
   </div>
+
 </section>
 
-<script src="script.js"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
