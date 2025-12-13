@@ -305,7 +305,9 @@ body {
   border: 5px solid #0c2340;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: 0.3s ease;
+  text-align: left;  /* <--- Add this */
 }
+
 
 .portfolio-page .case-block:hover {
   transform: translateY(-5px);
@@ -345,8 +347,41 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+#pageToggle button {
+  background-color: #8B9EB7;       /* Beige background */
+  color: #0c2340;                  /* Navy text */
+  border: 3px solid #0c2340;       /* Thicker navy border */
+  padding: 14px 30px;              /* Bigger padding */
+  margin: 0 12px;
+  border-radius: 16px;             /* More rounded */
+  font-size: 18px;                 /* Larger font */
+  font-weight: 800;                /* Bolder text */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(12, 35, 64, 0.3); /* Soft shadow */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#pageToggle button:hover {
+  background-color: #0c2340;      /* Navy background */
+  color: #d7ba89;                 /* Beige text */
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px rgba(12, 35, 64, 0.5); /* Stronger shadow */
+}
+
+#pageToggle button:focus {
+  outline: none;
+  box-shadow: 0 0 12px 3px #d7ba89;
+}
+
+.case-section a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #6A7A99; /* Slightly darker light blue */
+}
+
+.case-section a:hover {
+  color: #0c2340; /* Dark navy on hover */
 }
 
 
-
-
+}
