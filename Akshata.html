@@ -24,3 +24,193 @@
       </ul>
     </div>
   </nav>
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Ideas — DAA Tree</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-a">
+
+<header class="app-header">
+  <h1>💡 Business Ideas — DAA Tree</h1>
+</header>
+
+<main class="layout">
+  <!-- LEFT: Tree panel -->
+  <aside class="panel tree-panel">
+    <small>Tree (categories → idea nodes). Click a node.</small>
+    <div id="treeWrap" class="tree-wrap" tabindex="0"></div>
+
+    <div class="traversal-controls">
+      <button id="runDFS" class="btn">Run DFS</button>
+      <button id="runBFS" class="btn">Run BFS</button>
+      <button id="resetVisit" class="btn ghost">Reset</button>
+    </div>
+
+    <div id="traversalOutput" class="traversal-output">Traversal order will appear here.</div>
+  </aside>
+
+  <!-- RIGHT: Content panel -->
+  <section class="panel content-panel">
+    <!-- Course Reflection -->
+    <section id="reflections" class="reflections">
+      <h2>📘 Course Reflection</h2>
+      <div class="reflection-box">
+        <p>
+          I learned to analyze real-world problems using Design Thinking.
+          I applied DAA concepts (trees, graphs, DFS/BFS) to structure project navigation 
+          and used smart technologies as solutions for agriculture, waste management, and urban living.
+        </p>
+      </div>
+    </section>
+
+    <!-- SDGs Section -->
+    <section id="sdgs">
+      <h2>🌱 Sustainable Development Goals (SDGs)</h2>
+      <div class="sdg-scroll">
+        
+          <div class="sdg-box sdg9">🌿 Climate Action  <p>Plant Nursery </p> </div>
+        <div class="sdg-box sdg3">🏥 Good Health & Well-being   <p>Gym & Fitness Centre, Sports Training Academy, Adventure Park + Food Street </p></div>
+        <div class="sdg-box sdg4">📚 Quality Education  <p>Sports Training Academy </p>  </div>
+        <div class="sdg-box sdg5">💼 Decent Work & Economic Growth <p>Mushroom Cultivation, Startup Co-Working Centre </p>  </div>
+        <div class="sdg-box sdg6">🏭 Industry, Innovation & Infrastructure <p> Startup Co-Working Centre</p>  </div>
+        <div class="sdg-box sdg8">♻️ Responsible Consumption & Production  <p> Mushroom Cultivation</p> </div>
+        <div class="sdg-box sdg7">🏘️ Sustainable Cities & Communities <p>Dairy Farm Smart Management, Café & Mini Mart, Apartment Complexes, Adventure Park + Food Street</p></div>
+        <div class="sdg-box sdg2">🍲 Zero Hunger<p>Dairy Farm Smart Management , Beekeeping & Honey Production,Café & Mini Mart</p></div>
+       
+      </div>
+    </section>
+
+  <p>  </p>
+ 
+    <!-- Detailed Idea Area -->
+   <section id="detailed-ideas" class="detailed-ideas">
+
+  <div id="idea-1" class="idea-card" style="display:none">
+    <h3>Dairy Farm Smart Management</h3>
+   
+    <p>📍 Located in our newly developed Smart City </p>
+
+ <p>🔹Purpose</p>
+<p>To supply fresh, organic milk and dairy products to the residents of the city while ensuring animal welfare, automation, and high productivity using modern technologies.</p>
+    
+    <p>Indraprastha aims to improve agriculture while supporting the (SDGs) <span class="bright-text">Sustainable Development Goals</span> such as food security, good health, and employment. Dairy farming is very important because it provides milk, supports farmers, and improves nutrition. However, traditional dairy farms face problems like poor record keeping, difficulty in tracking cattle health, uneven milk production, and high management costs. A Smart Dairy Farm Management System helps solve these problems using data structures and algorithms. </p>
+   
+    <p>The system starts with collecting daily data such as milk quantity, feed intake, and health details of each cow. This data is stored using <span class="bright-text">Arrays and List</span>, which makes it easy to add and view records. Each cow is given a unique ID, and hashing is used to connect this ID to its records. <span class="bright-text">Hash table</span>s allow quick access to a cow’s data without searching the entire database.</p>
+   
+    <p>To organize the farm properly, the dairy is represented using a tree structure. The farm is the main node, cattle groups are sub-nodes, and individual cows are leaf nodes. This creates a clear hierarchy.<span class="bright-text">DFS</span> (Depth First Search) is used when detailed checking of cattle in one group is needed, while <span class="bright-text">BFS</span> (Breadth First Search) is used to monitor all cattle group by group. This helps in systematic inspection and management. </p>
+    
+    <p>To study milk production, sorting algorithms are used. <span class="bright-text">Merge Sort</span>is applied to sort cows based on milk yield because it works efficiently even for large data. After sorting, it becomes easy to identify cows that produce more or less milk. A <span class="bright-text">Heap</span> data structure is used to quickly find the highest milk-producing cows, which helps in better feeding and breeding decisions. </p>
+   
+    <p>For feed distribution, a Greedy Technique is used. The available feed is given first to cows that produce more milk so that overall milk production is increased. This approach helps in using resources efficiently without wastage. </p>
+   
+   
+    <p>To calculate total milk production over a period of time, such as a week or a month, a Fenwick Tree (Binary Indexed Tree) is used. It allows fast calculation of milk quantity over a range of days. It is preferred over a <span class="bright-text">segment</span> Tree because it is simpler and easier to implement. </p>
+   
+    <p>Finally, milk collection routes are planned using a graph representation of the farm. Storage units and cattle sheds are treated as nodes, and paths between them are edges. <span class="bright-text">Dijkstra’s</span> Algorithm is used to find the shortest and fastest route for milk transportation, which saves time and fuel.</p>
+   
+    <p>By integrating trees, hashing, heaps, sorting algorithms, Fenwick Trees, greedy strategies, and shortest path algorithms, the Smart Dairy Farm Management System improves productivity, reduces operational inefficiencies, and supports sustainable agricultural development. </p> 
+    
+    
+    <p> Flowchart  </p>
+<p>Sorting cows (Merge Sort) → Location Monitoring (Graph) → Smart Feeding (Priority Queue) → Milk Transport (Dijkstra) → Health Check Queue → Cost Analysis (BIT) </p>
+    
+
+    
+    
+   <a href="https://github.com/Akshataarer/DSA_Code/blob/main/Dijkstra/Dijkstra.cpp" target="_blank" class="btn">Dijkstra</a>
+   <a href="https://github.com/Akshataarer/DSA_Code/blob/main/prims/prims.cpp" target="_blank" class="btn">Floyds</a>
+  </div>
+   
+
+  <div id="idea-2" class="idea-card" style="display:none">
+    <h3>Beekeeping & Honey Production</h3>
+   
+    <p>Flowchart<p/>
+
+<p>Sort Hive Strength → Map Hives (Graph) → Honey Transport (Dijkstra) → Emergency Priority → Storage using Stack → Profit Analysis (BIT) </p>
+  </div>
+
+  <div id="idea-3" class="idea-card" style="display:none">
+    <h3>Mushroom Cultivation</h3>
+    <p>
+      Indoor farming using controlled humidity, temperature, and CO₂ levels
+      to achieve high mushroom yield with minimal space.
+    </p>
+  </div>
+
+  <div id="idea-4" class="idea-card" style="display:none">
+    <h3>Café & Mini Mart + delivery system</h3>
+    <p>
+      A small community café + mini mart offering fresh snacks, beverages,
+      and smart inventory monitoring for daily needs.
+    </p>
+  </div>
+
+  <div id="idea-5" class="idea-card" style="display:none">
+    <h3>startup Co-Working Center</h3>
+    <p>
+      Uses weather patterns and historical data to predict crop supply,
+      helping farmers plan planting and reduce losses.
+    </p>
+  </div>
+
+  <div id="idea-6" class="idea-card" style="display:none">
+    <h3>Adventure Park + Food Street</h3>
+    <p>
+      A park that combines agriculture, technology demonstrations, workshops,
+      and fun activities to educate visitors about modern farming.
+    </p>
+  </div>
+
+  <div id="idea-7" class="idea-card" style="display:none">
+    <h3>Plant Nursery</h3>
+    <p>
+      A nursery with automated irrigation, growth tracking, and online ordering
+      for gardeners, landscapers, and home plant lovers.
+    </p>
+  </div>
+
+  <div id="idea-8" class="idea-card" style="display:none">
+    <h3>Sports Training Academy</h3>
+    <p>
+      Data-driven coaching using sensors, wearable trackers, and video analytics
+      to train athletes with personalized plans.
+    </p>
+  </div>
+
+  <div id="idea-9" class="idea-card" style="display:none">
+    <h3>Apartment Complexes</h3>
+    <p>
+      Smart apartment campus with automated lighting, IoT utilities,
+      visitor access systems, and predictive maintenance.
+    </p>
+  </div>
+
+  <div id="idea-10" class="idea-card" style="display:none">
+    <h3>Gym & Fitness Centre</h3>
+    <p>
+      Modern fitness centre with smart machines, progress tracking,
+      personalized workouts, and digital membership management.
+    </p>
+  </div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+  
