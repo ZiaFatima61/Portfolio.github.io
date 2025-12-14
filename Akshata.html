@@ -211,6 +211,71 @@
       Uses weather patterns and historical data to predict crop supply,
       helping farmers plan planting and reduce losses.
     </p>
+    <p>
+Indraprastha aims to promote tourism, entertainment, and local business while
+supporting Sustainable Development Goals such as economic growth and sustainable
+cities. An Adventure Park with a Food Street is important because it provides
+recreation for people, creates jobs, and supports small food businesses.
+However, traditional parks face problems like long waiting lines, poor crowd
+management, inefficient stall allocation, and difficulty in planning routes.
+A smart Adventure Park + Food Street system solves these problems using data
+structures and algorithms.
+</p>
+
+<p>
+Visitor entry and ride booking are managed using a
+<span class="bright-text">Queue (O(1))</span>.
+Visitors are allowed to enter rides in the order they arrive, which ensures
+fairness and reduces waiting time.
+</p>
+
+<p>
+The park layout is represented using a
+<span class="bright-text">Graph structure</span>,
+where rides, food stalls, and exits are nodes, and pathways are edges.
+<span class="bright-text">BFS (O(V + E))</span>
+is used to guide visitors level by level to nearby attractions, helping control
+crowd movement.
+</p>
+
+<p>
+To plan the shortest walking paths between rides and food stalls,
+<span class="bright-text">Dijkstra’s Algorithm (O(E log V))</span>
+is used. This reduces walking distance and improves visitor experience.
+</p>
+
+<p>
+Food stall information such as menu items, prices, and availability is stored
+using
+<span class="bright-text">Hash Tables (O(1) average time)</span>.
+This allows fast access to stall details without searching through all stalls.
+</p>
+
+<p>
+Popular rides and food items are identified using a
+<span class="bright-text">Max Heap (O(1) access, O(log n) update)</span>.
+This helps management promote high-demand attractions and items efficiently.
+</p>
+
+<p>
+Ride schedules and staff allocation are handled using a
+<span class="bright-text">Greedy Algorithm (O(n))</span>,
+where resources are assigned first to high-demand rides to maximize customer
+satisfaction.
+</p>
+
+<p>
+Daily visitor count and revenue over time are tracked using a
+<span class="bright-text">Fenwick Tree / Binary Indexed Tree (O(log n))</span>.
+It allows fast calculation of totals over different time periods.
+</p>
+
+<p>
+By using queues, graphs, BFS, shortest path algorithms, hashing, heaps, greedy
+techniques, and Fenwick Trees, the smart Adventure Park + Food Street system
+ensures smooth crowd flow, better planning, and an enjoyable visitor experience.
+</p>
+
   </div>
 
   <div id="idea-6" class="idea-card" style="display:none">
