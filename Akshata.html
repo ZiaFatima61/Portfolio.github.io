@@ -162,6 +162,25 @@
       Indoor farming using controlled humidity, temperature, and CO₂ levels
       to achieve high mushroom yield with minimal space.
     </p>
+    <p>📍 Located in our newly developed Smart City </p>
+     
+     <p>Indoor farming using controlled humidity, temperature, and CO₂ levels
+      to achieve high mushroom yield with minimal space.
+    </p>
+    
+     <p>Indraprastha aims to strengthen sustainable agriculture while supporting the  <span class="bright-text">Sustainable Development Goals (SDGs)</span>  such as zero hunger, good health, and decent work. Mushroom cultivation is an important agricultural activity because it provides nutritious food, requires less land, and generates income for farmers. However, traditional mushroom cultivation faces problems such as poor environmental control, irregular growth, crop spoilage, and financial loss. A Smart Mushroom Cultivation System helps overcome these issues using efficient data structures and algorithms </p>
+     <p>The system begins by collecting environmental data such as temperature, humidity, and moisture levels at regular intervals. This data is stored using  <span class="bright-text">arrays and lists </span>  , where insertion and access operations take <span class="bright-text">O(1) </span>  time, making them suitable for frequent sensor updates. Each growing chamber is assigned a unique ID, and <span class="bright-text"> hashing</span> is used to map this ID to its data, allowing fast access in <span class="bright-text">O(1) average </span> time without scanning all records. </p>
+     <p>To continuously monitor recent environmental conditions, a  <span class="bright-text">sliding window </span>  technique is applied to time-based data. This technique processes the data in  <span class="bright-text"> O(n)</span>  time overall, as each reading enters and exits the window only once. It helps detect sudden changes in conditions efficiently, ensuring timely corrective actions. </p>
+     <p>For answering range-based queries such as total or average temperature over several days, a <span class="bright-text">Fenwick Tree </span>  (Binary Indexed Tree) is used. The  <span class="bright-text"></span>  Fenwick Tree supports updates and queries in <span class="bright-text">O(log n) </span> time, which is efficient for frequent calculations and is chosen over Segment Trees due to simpler implementation and lower memory usage. </p>
+     <p>Daily growth and yield data are sorted using Sort <span class="bright-text"> Insertion</span>  , which runs in  <span class="bright-text">O(n²)</span>  time in the  <span class="bright-text">worst case</span>  but performs efficiently for small and nearly sorted datasets, making it suitable for daily cultivation records. <span class="bright-text"> Greedy techniques</span> are used to allocate water and nutrients, ensuring optimal resource usage by making locally optimal decisions at each step with minimal computation. </p>
+     <p>To manage different growth stages, the cultivation process is represented using a  <span class="bright-text"> tree</span>  structure. <span class="bright-text"> DFS </span> (Depth First Search) is used for detailed inspection of a specific growth stage, while <span class="bright-text"> BFS</span>  (Breadth First Search) is used for level-wise monitoring. Both traversal techniques operate in <span class="bright-text"></span>   O(V + E) time, ensuring efficient inspection even as the system scales. </p>
+     <p>By combining constant-time data access, logarithmic-time range queries, and linear-time monitoring techniques, the Smart Mushroom Cultivation System achieves high efficiency, reduces losses, and improves overall productivity. </p>
+    
+     
+  <a href="" target="_blank" class="btn"></a>
+   <a href="" target="_blank" class="btn"></a>
+ 
+ 
   </div>
 
   <div id="idea-4" class="idea-card" style="display:none">
