@@ -209,10 +209,21 @@
 
   <div id="idea-7" class="idea-card" style="display:none">
     <h3>Plant Nursery</h3>
+ <p>📍 Located in our newly developed Smart City </p>
+     
     <p>
       A nursery with automated irrigation, growth tracking, and online ordering
       for gardeners, landscapers, and home plant lovers.
     </p>
+    
+    <p>Indraprastha focuses on environmental sustainability and green development in line with SDGs such as climate action, life on land, and sustainable cities. Plant nurseries are important because they support greenery, improve air quality, and provide employment. However, traditional nurseries face problems like poor plant tracking, difficulty in managing different plant types, irregular watering schedules, and inefficient space usage. A Smart Plant Nursery Management System solves these problems using data structures and algorithms.</p>
+     <p>Each plant is assigned a unique ID, and plant details such as type, age, and growth stage are stored using <span class="bright-text"> Arrays and Lists</span>, which allow easy insertion and traversal in <span class="bright-text">O(1) </span> and <span class="bright-text">O(n)</span>  time respectively. For fast searching of plant categories and names, a Trie data structure is used. <span class="bright-text">Trie</span>  enables prefix-based searching in <span class="bright-text">O(L)</span>  time, where L is the length of the plant name, making it efficient for large plant catalogs.</p>
+    <p>The nursery layout is represented as a  <span class="bright-text">Tree</span> structure, where the nursery is the root node, sections are intermediate nodes, and individual plants are leaf nodes.<span class="bright-text"> DFS (Depth First Search)</span>  is used for detailed inspection of plants in a particular section, while <span class="bright-text">BFS</span>  (Breadth First Search) is used for level-wise monitoring. Both <span class="bright-text"> DFS and BFS run in O(V + E) </span>time, ensuring efficient traversal of the nursery structure.</p>
+     <p>Watering and fertilizer distribution use a <span class="bright-text">Greedy </span> Algorithm, where plants with higher water or nutrient requirements are given priority. This <span class="bright-text"> greedy</span>  approach runs in <span class="bright-text">O(n)</span>  time and ensures optimal resource usage without wastage.</p>
+     <p> Plant growth data over time is stored using a Tree <span class="bright-text"> Fenwick</span> (Binary Indexed Tree), which allows fast range queries and updates in <span class="bright-text">O(log n)</span> time. It is chosen over Segment Tree due to its simpler implementation and lower memory usage.</p>
+     <p>By using tries, trees, traversal algorithms, greedy techniques, and Fenwick Trees, the Smart Plant Nursery System improves plant health, saves resources, and ensures sustainable nursery management.</p>
+ 
+    
   </div>
 
   <div id="idea-8" class="idea-card" style="display:none">
