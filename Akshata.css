@@ -357,7 +357,7 @@ body {
   padding: 8px 4px 14px 4px;
 }
 .sdg-box {
-  flex: 1 1 calc(25% - 10px); /* 4 buttons per row, with gap adjustment */
+  flex: 1 1 calc(33.33% - 10px); /* 3 buttons per row, with gap adjustment */
   min-width: 90px;
   height: 120px;
   /* other styles */
