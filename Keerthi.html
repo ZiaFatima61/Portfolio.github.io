@@ -426,5 +426,157 @@ In industrial management, efficiency is measured by <strong>Resource Utilization
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial & Urban Management Systems</title>
+
+    <style>
+        body {
+            background-color: #D8B98B; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 950px;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        h1, h2 { color: #2c3e50; text-align: center; }
+        
+        /* Hexagonal 3D Buttons */
+        .button-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .hex-btn {
+            position: relative;
+            width: 150px; 
+            height: 86.6px;
+            background-color: #2980b9; /* Industrial Blue */
+            margin: 43.3px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 0 #1a5276; /* 3D Edge */
+        }
+
+        .hex-btn::before, .hex-btn::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hex-btn::before {
+            bottom: 100%;
+            border-bottom: 43.3px solid #2980b9;
+        }
+
+        .hex-btn::after {
+            top: 100%;
+            width: 0;
+            border-top: 43.3px solid #2980b9;
+        }
+
+        .hex-btn:hover {
+            transform: translateY(-10px);
+            background-color: #f1c40f; /* Gold on hover */
+            color: #2c3e50;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+
+        .hex-btn:hover::before { border-bottom-color: #f1c40f; }
+        .hex-btn:hover::after { border-top-color: #f1c40f; }
+
+        .hex-btn span {
+            position: relative;
+            z-index: 10;
+            padding: 0 5px;
+        }
+
+        ul { margin-top: 20px; font-size: 17px; }
+        li { margin-bottom: 12px; }
+        strong { color: #2c3e50; }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Industrial & Urban System Implementations</h1>
+    <p style="text-align: center; font-style: italic;">
+        Click the technical modules below to view the source code on GitHub.
+    </p>
+
+    <div class="button-grid">
+
+        <a href="https://github.com/keerthics256/DSA-CPP-CODE/blob/main/Dijkstra.cpp" target="_blank" class="hex-btn">
+            <span>WASTE ROUTE (Dijkstra)</span>
+        </a>
+
+        <a href="https://github.com/keerthics256/DSA-CPP-CODE/blob/main/BFS.cpp" target="_blank" class="hex-btn">
+            <span>TRAFFIC FLOW (BFS)</span>
+        </a>
+
+        <a href="https://github.com/keerthics256/DSA-CPP-CODE/blob/main/Heap.cpp" target="_blank" class="hex-btn">
+            <span>SAFETY ALERTS (Heap)</span>
+        </a>
+
+        <a href="https://github.com/keerthics256/DSA-CPP-CODE/blob/main/Binary.cpp" target="_blank" class="hex-btn">
+            <span>LAND MAP (Binary)</span>
+        </a>
+
+        <a href="https://github.com/keerthics256/DSA-CPP-CODE/blob/main/Merge.cpp" target="_blank" class="hex-btn">
+            <span>LOG DATA (Merge)</span>
+        </a>
+
+        <a href="https://github.com/keerthics256/DSA-CPP-CODE/blob/main/Quick.cpp" target="_blank" class="hex-btn">
+            <span>PRIORITY (Quick)</span>
+        </a>
+
+    </div>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+    <h2>Overall Benefits of Industrial Optimization</h2>
+    <ul>
+        <li><strong>Cost Reduction:</strong> Optimized waste collection routes save up to 20% in fuel costs.</li>
+        <li><strong>Safety Compliance:</strong> Real-time chemical monitoring via Priority Heaps prevents hazardous leaks.</li>
+        <li><strong>Infrastructure Efficiency:</strong> Dynamic traffic signaling reduces congestion in industrial corridors.</li>
+        <li><strong>Transparent Allocation:</strong> Algorithmic land distribution ensures fair and dense plot utilization.</li>
+        <li><strong>Zero-Latency Response:</strong> High-speed sorting and searching allow for instant parking violation ticketing.</li>
+        <li><strong>Data-Driven Decisions:</strong> Centralized logs provide insights into urban growth and safety trends.</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
         
     
