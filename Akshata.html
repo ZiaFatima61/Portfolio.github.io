@@ -101,24 +101,20 @@
  <p>🔹Purpose</p>
 <p>To supply fresh, organic milk and dairy products to the residents of the city while ensuring animal welfare, automation, and high productivity using modern technologies.</p>
     
-    <p>Indraprastha aims to improve agriculture while supporting the (SDGs) <span class="bright-text">Sustainable Development Goals</span> such as food security, good health, and employment. Dairy farming is very important because it provides milk, supports farmers, and improves nutrition. However, traditional dairy farms face problems like poor record keeping, difficulty in tracking cattle health, uneven milk production, and high management costs. A Smart Dairy Farm Management System helps solve these problems using data structures and algorithms. </p>
+    <p>The city aims to improve agriculture while supporting the (SDGs) <span class="bright-text">Sustainable Development Goals</span> such as food security, good health, and employment. Dairy farming is very important because it provides milk, supports farmers, and improves nutrition. However, traditional dairy farms face problems like poor record keeping, difficulty in tracking cattle health, uneven milk production, and high management costs. A Smart Dairy Farm Management System helps solve these problems using data structures and algorithms. </p>
    
     <p>The system starts with collecting daily data such as milk quantity, feed intake, and health details of each cow. This data is stored using <span class="bright-text">Arrays and List</span>, which makes it easy to add and view records. Each cow is given a unique ID, and hashing is used to connect this ID to its records. <span class="bright-text">Hash table</span>s allow quick access to a cow’s data without searching the entire database.</p>
-   
     <p>To organize the farm properly, the dairy is represented using a tree structure. The farm is the main node, cattle groups are sub-nodes, and individual cows are leaf nodes. This creates a clear hierarchy.<span class="bright-text">DFS</span> (Depth First Search) is used when detailed checking of cattle in one group is needed, while <span class="bright-text">BFS</span> (Breadth First Search) is used to monitor all cattle group by group. This helps in systematic inspection and management. </p>
     
     <p>To study milk production, sorting algorithms are used. <span class="bright-text">Merge Sort</span> is applied to sort cows based on milk yield because it works efficiently even for large data. After sorting, it becomes easy to identify cows that produce more or less milk. A <span class="bright-text">Heap</span> data structure is used to quickly find the highest milk-producing cows, which helps in better feeding and breeding decisions. </p>
    
     <p>For feed distribution, a Greedy Technique is used. The available feed is given first to cows that produce more milk so that overall milk production is increased. This approach helps in using resources efficiently without wastage. </p>
    
-   
     <p>To calculate total milk production over a period of time, such as a week or a month, a Fenwick Tree (Binary Indexed Tree) is used. It allows fast calculation of milk quantity over a range of days. It is preferred over a <span class="bright-text">segment</span> Tree because it is simpler and easier to implement. </p>
    
     <p>Finally, milk collection routes are planned using a graph representation of the farm. Storage units and cattle sheds are treated as nodes, and paths between them are edges. <span class="bright-text">Dijkstra’s</span> Algorithm is used to find the shortest and fastest route for milk transportation, which saves time and fuel.</p>
    
-    <p>By integrating trees, hashing, heaps, sorting algorithms, Fenwick Trees, greedy strategies, and shortest path algorithms, the Smart Dairy Farm Management System improves productivity, reduces operational inefficiencies, and supports sustainable agricultural development. </p> 
-    
-    
+    <p>By integrating trees, hashing, heaps, sorting algorithms, Fenwick Trees, greedy strategies, and shortest path algorithms, the Smart Dairy Farm Management System improves productivity, reduces operational inefficiencies, and supports sustainable agricultural development. </p>     
     <p> <span class="bright-text"> Flowchart</span>  </p> 
 <p>Sorting cows (Merge Sort) → Location Monitoring (Graph) → Smart Feeding (Priority Queue) → Milk Transport (Dijkstra) → Health Check Queue → Cost Analysis (BIT) </p>
     
@@ -133,18 +129,77 @@
   <div id="idea-2" class="idea-card" style="display:none">
     <h3>Beekeeping & Honey Production</h3>
 
-    <p>📍 Located in our newly developed Smart City </p>
-   
-    <p>Indraprastha aims to support sustainable agriculture and biodiversity while aligning with the  <span class="bright-text">Sustainable Development Goals (SDGs)</span> such as food security, good health, and decent work. Beekeeping is very important because it supports honey production, helps in pollination of crops, protects biodiversity, and provides income to farmers. However, traditional beekeeping faces problems such as irregular honey yield, difficulty in monitoring hive health, poor harvesting decisions, and lack of proper data management. A Smart Beekeeping and Honey Production System helps solve these problems using data structures and algorithms. </p>
-    <p>The system begins with collecting data from each beehive, such as temperature, humidity, bee activity, and honey level. This data is stored using  <span class="bright-text">arrays and lists</span> , which makes it easy to update daily records. Each beehive is given a unique ID, and  <span class="bright-text">hashing</span>  (hash tables) is used to link the hive ID with its health and production data. This allows quick access to hive information without searching through all records. </p>
-    <p>To manage multiple beehives efficiently, the beekeeping area is represented as a   <span class="bright-text">graph</span>   structure. Each beehive is treated as a node, and nearby hives are connected using edges. <span class="bright-text">BFS</span>  (Breadth First Search) is used to regularly monitor all hives level by level. This helps beekeepers quickly identify unhealthy or inactive hives and take timely action. </p>
-    <p>Honey types, quality grades, and product categories are stored using a <span class="bright-text">Trie</span>   data structure. Tries allow fast searching and classification of honey based on names or prefixes, which is useful for labeling, packaging, and marketing different honey products. </p>
-    <p>Environmental data such as temperature and humidity patterns are stored in a  <span class="bright-text">lookup table</span>  . Since this data is pre-computed, it can be accessed quickly whenever needed. This helps in making fast decisions related to hive maintenance and harvesting conditions. </p>
-    <p>To decide the best time for honey harvesting, a <span class="bright-text"> Greedy Algorithm</span>  is used. The system selec
-      ts the harvesting time that gives the maximum immediate honey yield while maintaining hive health. This approach ensures efficient use of resources and prevents over-harvesting. </p>
-    <p>For predicting future honey production, <span class="bright-text"> Dynamic Programming </span>  is applied. Past seasonal data is used to estimate future yield, helping farmers plan storage, pricing, and sales in advance. This reduces uncertainty and improves long-term productivity. </p>
-    <p>By using graphs, BFS, hashing, tries, lookup tables, greedy techniques, and dynamic programming, the Smart Beekeeping System improves hive management, increases honey quality, and ensures sustainable and profitable honey production. </p>
-  
+<span class="bright-text">📍 Located in our newly developed Smart City</span>
+    
+    <p>The city aims to support sustainable agriculture and biodiversity while aligning
+with the <span class="bright-text">Sustainable Development Goals (SDGs)</span>
+such as food security, good health, and decent work. Beekeeping is very important
+because it supports honey production, helps in pollination of crops, protects
+biodiversity, and provides income to farmers. However, traditional beekeeping
+faces problems such as irregular honey yield, difficulty in monitoring hive
+health, poor harvesting decisions, and lack of proper data management. A Smart
+Beekeeping and Honey Production System helps solve these problems using data
+structures and algorithms.
+</p>
+
+<p>
+The system begins with collecting data from each beehive, such as temperature,
+humidity, bee activity, and honey level. This data is stored using
+<span class="bright-text">Arrays and Lists (O(1) access, O(n) space)</span>,
+which makes it easy to update daily records. Each beehive is given a unique ID,
+and <span class="bright-text">Hashing / Hash Tables (O(1) average time, O(n) space)</span>
+is used to link the hive ID with its health and production data. This allows quick
+access to hive information without scanning all records.
+</p>
+
+<p>
+To manage multiple beehives efficiently, the beekeeping area is represented as a
+<span class="bright-text">Graph (O(V + E) space)</span> structure. Each beehive
+is treated as a node, and nearby hives are connected using edges.
+<span class="bright-text">BFS – Breadth First Search (O(V + E) time)</span>
+is used to regularly monitor all hives level by level. This helps beekeepers
+quickly identify unhealthy or inactive hives and take timely action.
+</p>
+
+<p>
+Honey types, quality grades, and product categories are stored using a
+<span class="bright-text">Trie Data Structure (O(L) search time, O(n × L) space)</span>.
+Tries allow fast searching and classification of honey based on names or prefixes,
+which is useful for labeling, packaging, and marketing different honey products.
+</p>
+
+<p>
+Environmental data such as temperature and humidity patterns are stored in a
+<span class="bright-text">Lookup Table (O(1) access time, O(n) space)</span>.
+Since this data is pre-computed, it can be accessed instantly whenever needed.
+This helps in making fast decisions related to hive maintenance and harvesting
+conditions.
+</p>
+
+<p>
+To decide the best time for honey harvesting, a
+<span class="bright-text">Greedy Algorithm (O(n) time, O(1) space)</span>
+is used. The system selects the harvesting time that gives the maximum immediate
+honey yield while maintaining hive health. This approach ensures efficient use
+of resources and prevents over-harvesting.
+</p>
+
+<p>
+For predicting future honey production,
+<span class="bright-text">Dynamic Programming (O(n) time, O(n) space)</span>
+is applied. Past seasonal data is used to estimate future yield, helping farmers
+plan storage, pricing, and sales in advance. This reduces uncertainty and improves
+long-term productivity.
+</p>
+
+<p>
+By using arrays, hashing, graphs, BFS traversal, tries, lookup tables, greedy
+techniques, and dynamic programming with efficient time and space complexity,
+the Smart Beekeeping System improves hive management, increases honey quality,
+and ensures sustainable and profitable honey production.
+</p>
+
+    
    <p> <span class="bright-text"> Flowchart</span>  </p> 
    <p>Sort Hive Strength → Map Hives (Graph) → Honey Transport (Dijkstra) → Emergency Priority → Storage using Stack → Profit Analysis (BIT) </p>
   
@@ -168,7 +223,7 @@
       to achieve high mushroom yield with minimal space.
     </p>
     
-     <p>Indraprastha aims to strengthen sustainable agriculture while supporting the  <span class="bright-text">Sustainable Development Goals (SDGs)</span>  such as zero hunger, good health, and decent work. Mushroom cultivation is an important agricultural activity because it provides nutritious food, requires less land, and generates income for farmers. However, traditional mushroom cultivation faces problems such as poor environmental control, irregular growth, crop spoilage, and financial loss. A Smart Mushroom Cultivation System helps overcome these issues using efficient data structures and algorithms </p>
+     <p>The city aims to strengthen sustainable agriculture while supporting the  <span class="bright-text">Sustainable Development Goals (SDGs)</span>  such as zero hunger, good health, and decent work. Mushroom cultivation is an important agricultural activity because it provides nutritious food, requires less land, and generates income for farmers. However, traditional mushroom cultivation faces problems such as poor environmental control, irregular growth, crop spoilage, and financial loss. A Smart Mushroom Cultivation System helps overcome these issues using efficient data structures and algorithms </p>
      <p>The system begins by collecting environmental data such as temperature, humidity, and moisture levels at regular intervals. This data is stored using  <span class="bright-text">arrays and lists </span>  , where insertion and access operations take <span class="bright-text">O(1) </span>  time, making them suitable for frequent sensor updates. Each growing chamber is assigned a unique ID, and <span class="bright-text"> hashing</span> is used to map this ID to its data, allowing fast access in <span class="bright-text">O(1) average </span> time without scanning all records. </p>
      <p>To continuously monitor recent environmental conditions, a  <span class="bright-text">sliding window </span>  technique is applied to time-based data. This technique processes the data in  <span class="bright-text"> O(n)</span>  time overall, as each reading enters and exits the window only once. It helps detect sudden changes in conditions efficiently, ensuring timely corrective actions. </p>
      <p>For answering range-based queries such as total or average temperature over several days, a <span class="bright-text">Fenwick Tree </span>  (Binary Indexed Tree) is used. The  <span class="bright-text"></span>  Fenwick Tree supports updates and queries in <span class="bright-text">O(log n) </span> time, which is efficient for frequent calculations and is chosen over Segment Trees due to simpler implementation and lower memory usage. </p>
@@ -192,7 +247,7 @@
       and smart inventory monitoring for daily needs.
     </p>
     
-    <p>Indraprastha aims to improve urban convenience while supporting Sustainable Development Goals (SDGs) such as decent work, sustainable cities, and economic growth. A Café and Mini Mart is important because it provides daily essentials, food, and employment to local residents. However, traditional cafés and small shops face problems like poor inventory management, long waiting times, inefficient billing, and delayed deliveries. A Smart Café & Mini Mart System helps solve these issues using data structures and algorithms. </p>
+    <p>The city aims to improve urban convenience while supporting Sustainable Development Goals (SDGs) such as decent work, sustainable cities, and economic growth. A Café and Mini Mart is important because it provides daily essentials, food, and employment to local residents. However, traditional cafés and small shops face problems like poor inventory management, long waiting times, inefficient billing, and delayed deliveries. A Smart Café & Mini Mart System helps solve these issues using data structures and algorithms. </p>
     <p>Customer orders are received and managed using a <span class="bright-text"> Queue </span> data structure, which follows the  <span class="bright-text">First-In-First-Out </span> (FIFO) principle. This ensures fair order processing and reduces waiting time. Enqueue and dequeue operations take <span class="bright-text"> O(1)</span> time, making queues efficient even during peak hours. </p>
     <p>Product inventory is managed using <span class="bright-text"> Hash</span> Tables, where each product ID is mapped to its stock details. Hashing allows fast access, update, and deletion in <span class="bright-text">O(1) average</span> time, preventing delays caused by searching through long lists. This helps maintain accurate stock levels and avoid shortages. </p>
     <p>Sales data is analyzed using <span class="bright-text">Sorting</span>  Algorithms such as <span class="bright-text">Merge Sort</span>, which sorts products based on demand or sales volume in <span class="bright-text">O(n log n) </span> time. Sorting helps identify fast-moving and slow-moving items efficiently, enabling better restocking decisions.</p>
@@ -212,7 +267,7 @@
       helping farmers plan planting and reduce losses.
     </p>
     <p>
-Indraprastha aims to promote tourism, entertainment, and local business while
+The city aims to promote tourism, entertainment, and local business while
 supporting Sustainable Development Goals such as economic growth and sustainable
 cities. An Adventure Park with a Food Street is important because it provides
 recreation for people, creates jobs, and supports small food businesses.
@@ -284,6 +339,75 @@ ensures smooth crowd flow, better planning, and an enjoyable visitor experience.
       A park that combines agriculture, technology demonstrations, workshops,
       and fun activities to educate visitors about modern farming.
     </p>
+   <p>
+The city promotes tourism, entertainment, and local business development in line
+with Sustainable Development Goals such as economic growth and sustainable cities.
+An Adventure Park combined with a Food Street is important because it provides
+recreation, attracts tourists, creates employment, and supports small food
+vendors. However, traditional parks face problems like long waiting lines, poor
+crowd control, inefficient stall management, and difficulty in planning visitor
+movement. A Smart Adventure Park + Food Street Management System helps solve these
+problems using data structures and algorithms.
+</p>
+
+<p>
+Visitor entry and ride access are managed using a
+<span class="bright-text">Queue data structure (O(1))</span>,
+which follows the First-In-First-Out (FIFO) principle. Visitors are allowed to
+enter rides in the order they arrive, ensuring fairness and reducing waiting
+time.
+</p>
+
+<p>
+The layout of the park is represented using a
+<span class="bright-text">Graph structure</span>,
+where rides, food stalls, rest areas, and exits are nodes, and pathways are edges.
+<span class="bright-text">BFS – Breadth First Search (O(V + E))</span>
+is used to guide visitors step by step to nearby attractions and manage crowd
+flow efficiently.
+</p>
+
+<p>
+To find the shortest walking paths between rides and food stalls,
+<span class="bright-text">Dijkstra’s Algorithm (O(E log V))</span>
+is used. This helps reduce walking distance and congestion inside the park.
+</p>
+
+<p>
+Food stall information such as menu items, prices, and availability is stored
+using
+<span class="bright-text">Hash Tables (O(1) average time)</span>.
+This allows fast access to stall details without searching through all food
+vendors.
+</p>
+
+<p>
+Popular rides and food items are identified using a
+<span class="bright-text">Max Heap (O(1) access, O(log n) update)</span>.
+This helps management focus on high-demand attractions.
+</p>
+
+<p>
+Ride scheduling and staff allocation are handled using a
+<span class="bright-text">Greedy Algorithm (O(n))</span>.
+High-demand rides are given priority to maximize visitor satisfaction and
+efficient use of resources.
+</p>
+
+<p>
+Daily visitor count and revenue over time are tracked using a
+<span class="bright-text">Fenwick Tree / Binary Indexed Tree (O(log n))</span>.
+It allows fast calculation of totals over daily, weekly, or monthly periods.
+</p>
+
+<p>
+By using queues, graph structures, BFS, shortest path algorithms, hashing, heaps,
+greedy techniques, and Fenwick Trees, the Smart Adventure Park + Food Street
+system ensures smooth crowd flow, efficient management, and an enjoyable visitor
+experience.
+</p>
+
+  
   </div>
 
   <div id="idea-7" class="idea-card" style="display:none">
@@ -295,7 +419,7 @@ ensures smooth crowd flow, better planning, and an enjoyable visitor experience.
       for gardeners, landscapers, and home plant lovers.
     </p>
     
-    <p>Indraprastha focuses on environmental sustainability and green development in line with SDGs such as climate action, life on land, and sustainable cities. Plant nurseries are important because they support greenery, improve air quality, and provide employment. However, traditional nurseries face problems like poor plant tracking, difficulty in managing different plant types, irregular watering schedules, and inefficient space usage. A Smart Plant Nursery Management System solves these problems using data structures and algorithms.</p>
+    <p> The city focuses on environmental sustainability and green development in line with SDGs such as climate action, life on land, and sustainable cities. Plant nurseries are important because they support greenery, improve air quality, and provide employment. However, traditional nurseries face problems like poor plant tracking, difficulty in managing different plant types, irregular watering schedules, and inefficient space usage. A Smart Plant Nursery Management System solves these problems using data structures and algorithms.</p>
      <p>Each plant is assigned a unique ID, and plant details such as type, age, and growth stage are stored using <span class="bright-text"> Arrays and Lists</span>, which allow easy insertion and traversal in <span class="bright-text">O(1) </span> and <span class="bright-text">O(n)</span>  time respectively. For fast searching of plant categories and names, a Trie data structure is used. <span class="bright-text">Trie</span>  enables prefix-based searching in <span class="bright-text">O(L)</span>  time, where L is the length of the plant name, making it efficient for large plant catalogs.</p>
     <p>The nursery layout is represented as a  <span class="bright-text">Tree</span> structure, where the nursery is the root node, sections are intermediate nodes, and individual plants are leaf nodes.<span class="bright-text"> DFS (Depth First Search)</span>  is used for detailed inspection of plants in a particular section, while <span class="bright-text">BFS</span>  (Breadth First Search) is used for level-wise monitoring. Both <span class="bright-text"> DFS and BFS run in O(V + E) </span>time, ensuring efficient traversal of the nursery structure.</p>
      <p>Watering and fertilizer distribution use a <span class="bright-text">Greedy </span> Algorithm, where plants with higher water or nutrient requirements are given priority. This <span class="bright-text"> greedy</span>  approach runs in <span class="bright-text">O(n)</span>  time and ensures optimal resource usage without wastage.</p>
@@ -311,6 +435,69 @@ ensures smooth crowd flow, better planning, and an enjoyable visitor experience.
       Data-driven coaching using sensors, wearable trackers, and video analytics
       to train athletes with personalized plans.
     </p>
+    <p>
+The city focuses on improving health, fitness, and youth development in line with
+Sustainable Development Goals such as good health and well-being. A Sports
+Training Academy is important because it helps students improve physical fitness,
+build discipline, and develop professional sports skills. However, traditional
+academies face problems like poor player record management, inefficient training
+schedules, uneven coach allocation, and difficulty in tracking player
+performance. A Smart Sports Training Academy Management System helps solve these
+problems using data structures and algorithms.
+</p>
+
+<p>
+Player registration and daily attendance are managed using
+<span class="bright-text">Arrays and Lists (O(1) access, O(n) traversal)</span>.
+This makes it easy to add new players and maintain training records.
+</p>
+
+<p>
+Each player is given a unique ID, and all player details such as sport type,
+coach, and performance data are stored using
+<span class="bright-text">Hash Tables (O(1) average time)</span>.
+This allows fast access to player information without searching through all
+records.
+</p>
+
+<p>
+The academy structure is organized using a
+<span class="bright-text">Tree structure</span>,
+where the academy is the root node, sports categories are sub-nodes, and
+individual players are leaf nodes.
+<span class="bright-text">DFS – Depth First Search (O(V + E))</span>
+is used for detailed analysis of a particular sport, while
+<span class="bright-text">BFS – Breadth First Search (O(V + E))</span>
+is used to review player progress across all sports.
+</p>
+
+<p>
+Training schedules and coach assignments are planned using a
+<span class="bright-text">Greedy Algorithm (O(n))</span>.
+High-priority players and major competitions are handled first to improve overall
+training efficiency.
+</p>
+
+<p>
+Top-performing players are identified using a
+<span class="bright-text">Max Heap (O(1) access, O(log n) update)</span>.
+This helps coaches quickly identify players who need advanced training or
+selection.
+</p>
+
+<p>
+Player performance over time is tracked using a
+<span class="bright-text">Fenwick Tree / Binary Indexed Tree (O(log n))</span>.
+It allows fast updates and quick calculation of performance over weekly or
+monthly periods.
+</p>
+
+<p>
+By using arrays, hashing, tree structures, BFS and DFS traversals, greedy
+techniques, heaps, and Fenwick Trees, the Smart Sports Training Academy becomes
+well-organized, efficient, and focused on athlete development.
+</p>
+
   </div>
 
   <div id="idea-9" class="idea-card" style="display:none">
@@ -319,6 +506,70 @@ ensures smooth crowd flow, better planning, and an enjoyable visitor experience.
       Smart apartment campus with automated lighting, IoT utilities,
       visitor access systems, and predictive maintenance.
     </p>
+    <p>
+The city aims to provide safe and well-organized living spaces while supporting
+Sustainable Development Goals such as sustainable cities and communities. Apartment
+complexes are important because they provide housing, improve urban living, and
+support community life. However, traditional apartment management faces problems
+like poor resident record keeping, inefficient parking management, delayed
+maintenance services, and difficulty in tracking resource usage. A Smart
+Apartment Complex Management System helps solve these problems using data
+structures and algorithms.
+</p>
+
+<p>
+Resident information such as flat number, owner details, and contact information
+is stored using
+<span class="bright-text">Arrays and Lists (O(1) access, O(n) traversal)</span>.
+This allows easy addition and viewing of resident records.
+</p>
+
+<p>
+Each apartment and resident is assigned a unique ID, and quick access to details
+is enabled using
+<span class="bright-text">Hash Tables (O(1) average time)</span>.
+This allows fast searching and updating of resident information without scanning
+the entire database.
+</p>
+
+<p>
+The apartment layout is represented using a
+<span class="bright-text">Tree structure</span>,
+where the complex is the root node, buildings are sub-nodes, floors are internal
+nodes, and individual flats are leaf nodes.
+<span class="bright-text">BFS – Level Order Traversal (O(V + E))</span>
+is used to monitor facilities floor by floor, while
+<span class="bright-text">DFS – Depth First Search (O(V + E))</span>
+is used for detailed inspection of a specific building or floor.
+</p>
+
+<p>
+Parking slot allocation is handled using a
+<span class="bright-text">Greedy Algorithm (O(n))</span>.
+Available parking spaces are assigned efficiently to residents to reduce
+conflicts and improve usage.
+</p>
+
+<p>
+Maintenance requests are managed using a
+<span class="bright-text">Queue data structure (O(1))</span>.
+Requests are handled in the order they are received, ensuring fair and timely
+service.
+</p>
+
+<p>
+Monthly electricity and water usage is tracked using a
+<span class="bright-text">Fenwick Tree / Binary Indexed Tree (O(log n))</span>.
+This allows fast calculation of total consumption over different time periods.
+</p>
+
+<p>
+By using arrays, hashing, tree structures, BFS and DFS traversals, greedy
+techniques, queues, and Fenwick Trees, the Smart Apartment Complex Management
+System ensures efficient living, better resource management, and improved
+resident satisfaction.
+</p>
+
   </div>
 
   <div id="idea-10" class="idea-card" style="display:none">
@@ -327,6 +578,69 @@ ensures smooth crowd flow, better planning, and an enjoyable visitor experience.
       Modern fitness centre with smart machines, progress tracking,
       personalized workouts, and digital membership management.
     </p>
+<p>
+The city promotes healthy lifestyles and well-being in line with Sustainable
+Development Goals such as good health and well-being. A Gym and Fitness Centre is
+important because it helps people stay fit, reduce health risks, and improve
+quality of life. However, traditional gyms face problems like poor member record
+management, inefficient workout scheduling, uneven equipment usage, and
+difficulty in tracking fitness progress. A Smart Gym and Fitness Centre
+Management System helps solve these problems using data structures and
+algorithms.
+</p>
+
+<p>
+Member registration and daily attendance are managed using
+<span class="bright-text">Arrays and Lists (O(1) access, O(n) traversal)</span>.
+This makes it easy to add new members and maintain workout records.
+</p>
+
+<p>
+Each member is given a unique ID, and personal details such as fitness goals and
+membership type are stored using
+<span class="bright-text">Hash Tables (O(1) average time)</span>.
+This allows fast access to member information without searching through all
+records.
+</p>
+
+<p>
+The gym layout is organized using a
+<span class="bright-text">Tree structure</span>,
+where the gym is the root node, workout sections are sub-nodes, and individual
+machines are leaf nodes.
+<span class="bright-text">BFS – Level Order Traversal (O(V + E))</span>
+is used to monitor equipment usage section by section, while
+<span class="bright-text">DFS – Depth First Search (O(V + E))</span>
+is used for detailed inspection of a specific workout area.
+</p>
+
+<p>
+Workout schedules and trainer allocation are planned using a
+<span class="bright-text">Greedy Algorithm (O(n))</span>.
+Members with higher training needs or time constraints are given priority to
+maximize training efficiency.
+</p>
+
+<p>
+Popular equipment and peak usage times are identified using a
+<span class="bright-text">Max Heap (O(1) access, O(log n) update)</span>.
+This helps management reduce overcrowding and improve equipment availability.
+</p>
+
+<p>
+Fitness progress over weeks and months is tracked using a
+<span class="bright-text">Fenwick Tree / Binary Indexed Tree (O(log n))</span>.
+It allows fast updates and quick calculation of workout duration or calorie
+burned over time.
+</p>
+
+<p>
+By using arrays, hashing, tree structures, BFS and DFS traversals, greedy
+techniques, heaps, and Fenwick Trees, the Smart Gym and Fitness Centre becomes
+well-organized, efficient, and focused on member health.
+</p>
+
+    
   </div>
 
 </section>
