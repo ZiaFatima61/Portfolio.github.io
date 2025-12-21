@@ -5,140 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industrial & Urban Management Systems</title>
     <style>
-        body { background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 950px; margin: 50px auto; padding: 40px; background-color: #ffffff; border: 3px double #333; position: relative; }
-        .container::before, .container::after { content: ""; position: absolute; width: 30px; height: 5px; background: #2c3e50; }
-        .container::before { top: -5px; left: -5px; }
-        .container::after { bottom: -5px; right: -5px; }
-        h1 { text-align: center; color: #2c3e50; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
-        h2 { color: #e67e22; margin-top: 35px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h3 { color: #2980b9; margin-top: 25px; }
-        ul { list-style-type: square; padding-left: 25px; }
-        li { margin-bottom: 12px; line-height: 1.5; color: #444; }
-        .sdg-tag { font-weight: bold; color: #27ae60; }
+        body { background-color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 50px auto; padding: 40px; background-color: #ffffff; border: 3px double black; position: relative; }
+        .container::before, .container::after { content: ""; position: absolute; width: 20px; height: 3px; background: black; }
+        .container::before { top: -3px; left: -3px; }
+        .container::after { bottom: -3px; right: -3px; }
+        h1 { text-align: center; color: #333; margin-bottom: 30px; }
+        h2 { color: #222; margin-top: 30px; border-bottom: 2px solid #333; display: inline-block; }
+        h3 { color: #444; margin-top: 25px; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Industrial & Urban Management Portfolio</h1>
+        <h1>Industrial & Urban Management Systems</h1>
 
-        <h2>Section A: Smart Urban Infrastructure</h2>
+        <h2>Urban Infrastructure</h2>
 
         <h3>1. Industrial Waste Collection Route Optimization</h3>
         <ul>
-            <li><span class="sdg-tag">SDG 11 (Sustainable Cities):</span> Reduces the carbon footprint of heavy machinery.</li>
-            <li>Uses <strong>Graph Theory</strong> to solve the Traveling Salesperson Problem (TSP) for industrial zones.</li>
-            <li>Dynamic routing based on bin fill-levels sensed via IoT ultrasonic sensors.</li>
-            <li>Optimizes fuel consumption by $15-20\%$ through shortest-path calculation.</li>
+            <li>Aligns with SDG 11 (Sustainable Cities) by reducing carbon emissions through optimized logistics.</li>
+            <li>Uses Graph Theory to find the shortest path for collection vehicles based on real-time bin levels.</li>
+            <li>Reduces fuel consumption and operational costs for heavy industrial zones.</li>
+            <li>Ensures timely removal of hazardous waste to prevent environmental contamination.</li>
         </ul>
 
         <h3>2. Smart Parking Violation Detection</h3>
         <ul>
-            <li><span class="sdg-tag">SDG 9 (Infrastructure):</span> Enhances road safety and logistical flow.</li>
-            <li>Uses <strong>Pattern Matching</strong> and Computer Vision to detect vehicles in restricted "No-Loading" zones.</li>
-            <li>Reduces manual surveillance costs and automates time-stamped evidence logging.</li>
-            <li>Improves throughput in narrow industrial corridors.</li>
+            <li>Supports SDG 9 by improving urban infrastructure and traffic management.</li>
+            <li>Automates detection of unauthorized parking using Computer Vision and sensor data.</li>
+            <li>Reduces road bottlenecks and improves the flow of emergency service vehicles.</li>
+            <li>Provides real-time data logs for municipal authorities to monitor high-violation zones.</li>
         </ul>
 
         <h3>3. Real-Time Traffic Signal Timing Optimization</h3>
         <ul>
-            <li><span class="sdg-tag">SDG 13 (Climate Action):</span> Lowers emissions from idling industrial trucks.</li>
-            <li>Employs <strong>Max-Flow Algorithms</strong> to balance vehicle density across city grids.</li>
-            <li>Adjusts green-light intervals in real-time based on live traffic camera feeds.</li>
+            <li>Aligns with SDG 11 and SDG 13 (Climate Action) by reducing vehicle idling time.</li>
+            <li>Dynamically adjusts signal cycles based on live traffic density using Max-Flow algorithms.</li>
+            <li>Minimizes congestion and travel time in high-density industrial corridors.</li>
+            <li>Prioritizes freight movement during peak production hours.</li>
         </ul>
 
-        <h2>Section B: Industrial Operations & Safety</h2>
+        <h2>Industrial Operations & Safety</h2>
 
         <h3>4. Industrial Land Plot Allocation</h3>
         <ul>
-            <li><span class="sdg-tag">Resource Efficiency:</span> Automates the complex task of fitting irregular industrial units into master plans.</li>
-            <li>Uses <strong>Backtracking</strong> to ensure optimal "Bin Packing" of industrial land.</li>
-            <li>Maintains safety buffers between hazardous chemical units and commercial zones.</li>
+            <li>Optimizes the spatial distribution of industrial units based on utility access and zone type.</li>
+            <li>Uses Backtracking and Bin Packing algorithms to maximize land utilization efficiency.</li>
+            <li>Ensures compliance with safety buffers between different industry types (e.g., chemical vs. food).</li>
+            <li>Streamlines the bidding and allocation process for transparent urban development.</li>
         </ul>
 
         <h3>5. Chemical Storage Safety Monitoring</h3>
         <ul>
-            <li><span class="sdg-tag">SDG 3 (Health & Safety):</span> Prevents workplace catastrophes and gas leaks.</li>
-            <li>Features a <strong>Priority-Queue</strong> alert system to handle high-pressure or high-temp triggers first.</li>
-            <li>Uses AI to monitor chemical compatibility and predict reactive volatility.</li>
-            <!DOCTYPE html>
+            <li>Aligns with SDG 3 (Good Health) and SDG 9 (Industry Innovation) by preventing workplace disasters.</li>
+            <li>Uses IoT sensor grids to monitor heat, pressure, and chemical vapor concentration.</li>
+            <li>Features a Priority-based alert system to handle critical leaks instantly via Min-Heaps.</li>
+            <li>Provides predictive analysis to identify potential reaction risks before they occur.</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technical Reflection: DAA in Industry</title>
+<title>Industrial Systems Reflection</title>
 <style>
-    body { background-color: #D8B98B; font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
-    .container { width: 80%; background: #ffffff; padding: 40px; margin: 50px auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
-    h1 { color: #2c3e50; border-left: 5px solid #e67e22; padding-left: 15px; }
-    h2 { color: #34495e; margin-top: 30px; font-size: 22px; }
-    p { font-size: 17px; line-height: 1.8; color: #444; margin-bottom: 20px; }
-    .box { background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #ddd; margin: 10px 0; }
+    body { background-color: #D8B98B; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { width: 75%; background: #ffffff; padding: 30px; margin: 40px auto; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+    h1, h2 { color: #3b2f2f; margin-bottom: 10px; }
+    p { font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 25px; }
+    strong { color: #2c3e50; }
 </style>
 </head>
 <body>
 <div class="container">
-    <h1>DAA Project Reflection</h1>
+<h1>Industrial Systems Reflection</h1>
+<h2>What motivated these ideas and what problems do they solve?</h2>
+<p>
+The motivation comes from the increasing complexity of urban industrialization. Waste collection routes are often inefficient, much like how a non-optimized search algorithm wastes cycles. By using <strong>Route Optimization</strong>, we solve the problem of high fuel waste. <strong>Land Allocation</strong> addresses the scarcity of space, ensuring industries are placed where they are most productive without violating safety norms. <strong>Chemical Safety</strong> systems solve the problem of delayed human response in high-risk zones, using automation to save lives.
+</p>
 
-    <h2>Motivation & Problem Solving</h2>
-    <p>
-        These industrial ideas were motivated by the "Static Inefficiency" of modern cities. Traditional waste routes and traffic signals follow fixed schedules, which is inefficient. By applying <strong>Design and Analysis of Algorithms (DAA)</strong>, we can move from static systems to dynamic, self-optimizing ecosystems that mirror the efficiency of natural patterns.
-    </p>
+<h2>What is efficiency in these systems?</h2>
+<p>
+In industrial management, efficiency is measured by <strong>Resource Utilization</strong> and <strong>Response Time</strong>:
+<br><br>
+• <strong>Waste Collection:</strong> $O(V^2)$ vs $O(E \log V)$ pathfinding determines if a city saves millions in fuel.<br>
+• <strong>Traffic Signals:</strong> Real-time processing requires $O(1)$ lookup of sensor data.<br>
+• <strong>Land Allocation:</strong> Optimized space complexity ensures maximum plots in minimum area.
+</p>
 
-    <h2>System Efficiency (Time & Space)</h2>
-    <div class="box">
-        <strong>Time Complexity:</strong> Crucial for Traffic and Safety. A chemical leak alert must be processed in $O(1)$ or $O(\log n)$ time using a Priority Queue; an $O(n^2)$ search could lead to disaster.
-        <br><br>
-        <strong>Space Complexity:</strong> Important for Land Allocation. Storing massive spatial maps requires optimized data structures like Quad-trees or Segment Trees to save memory.
-    </div>
+<h2>Why do these solutions need proper data organization?</h2>
+<p>
+• <strong>Waste/Traffic:</strong> Use <strong>Graphs</strong> to represent city maps and intersections.<br>
+• <strong>Chemical Safety:</strong> Uses <strong>Min-Heaps</strong> to prioritize the most dangerous sensor alerts.<br>
+• <strong>Land Allocation:</strong> Uses <strong>2D Segment Trees</strong> or <strong>Grid-based Arrays</strong> for spatial mapping.<br>
+• <strong>Violation Detection:</strong> Uses <strong>Hash Tables</strong> for instant license plate verification.
+</p>
 
-    <h2>Data Organization Strategy</h2>
-    <p>
-        For <strong>Waste Management</strong>, we utilize <strong>Adjacency Lists</strong> for graphs because city maps are typically sparse. For <strong>Land Allocation</strong>, we use <strong>2D Arrays</strong> to represent coordinates. For <strong>Chemical Safety</strong>, a <strong>Min-Heap</strong> ensures the highest priority emergency is always handled first.
-    </p>
-
-    <h2>Algorithmic Techniques Used</h2>
-    <p>
-        • <strong>Greedy:</strong> Finding the next nearest pickup point for waste trucks.<br>
-        • <strong>Backtracking:</strong> Fitting different sized industrial plots into a fixed land grid.<br>
-        • <strong>Divide & Conquer:</strong> Segmenting large traffic networks into smaller, manageable zones.<br>
-        • <strong>Shortest Path (Dijkstra):</strong> Emergency vehicle routing through smart traffic grids.
-    </p>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithmic Implementation</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #D8B98B; padding: 20px; }
-        .container { background-color: white; padding: 30px; border-radius: 15px; max-width: 1000px; margin: auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        .algo-card { background: #eef7ff; border-left: 6px solid #2980b9; padding: 20px; margin: 20px 0; border-radius: 5px; }
-        .glow-container { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-top: 40px; }
-        .glow-btn { display: flex; align-items: center; justify-content: center; width: 140px; height: 140px; background: #2c3e50; color: white; border-radius: 50%; text-decoration: none; font-weight: bold; text-align: center; transition: 0.4s; box-shadow: 0 0 10px #2c3e50; border: 2px solid #34495e; font-size: 14px; }
-        .glow-btn:hover { transform: scale(1.15); box-shadow: 0 0 25px #3498db; background: #34495e; }
-        img { border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 style="text-align: center;">Industrial Logic & DAA Implementation</h1>
-
-        <div class="algo-card">
-            <h3>1. Pathfinding (Waste & Traffic)</h3>
-            <p><strong>Dijkstra's Algorithm:</strong> Used to calculate the least-cost path for waste collection vehicles, considering distance and traffic load as edge weights.</p>
-            
-        </div>
-
-        <div class="algo-card">
-            <h3>2. Spatial Optimization (Land Allocation)</h3>
-            <p><strong>Backtracking / Bin Packing:</strong> A recursive approach that tries to place industrial plots of size $X \times Y$ into a larger grid, backtracking when a collision occurs.</p>
-            
-        </div>
-
-        <div class="algo-card">
-            <h3>3. Emergency Processing (Chemical Safety)</h3>
-            <p><strong>Min-Heap (Priority Queue):</strong> Sensor data is fed into a heap. Any value crossing a "Danger Threshold" is moved to the root for $O(1)$ access by the emergency shutdown system.</p>
-            
-
+<h2>Design techniques influencing these ideas</h2>
+<p>
+• <strong>Greedy Algorithms:</strong> Used in Waste Collection to pick the next nearest full bin.<br>
+• <strong>Backtracking:</strong> Used in Land Allocation to try different plot combinations until the best fit is found.<br>
+• <strong>Pattern Matching:</strong> Used in Parking Violation detection to identify illegal vehicle behavior.<br>
+• <strong>Shortest Path:</strong> Dijkstra’s algorithm for emergency vehicle routing through traffic.
+</p>
+</div>
+</body>
+</html>
+        
+    
 
