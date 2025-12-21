@@ -339,7 +339,14 @@ body {
 .detailed-ideas{margin-top:12px;}
 .idea-card{background:#fff;padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 6px 14px rgba(0,0,0,0.04);}
 .idea-card h3{margin:0 0 6px 0;color:var(--accent);}
-.idea-card p{margin:0;color:var(--muted);}
+.idea-card p{margin:0;color:var(:root{
+  --accent:#005bb5;
+  --dark:#003f7f;
+  --bg:#f4f9ff;
+  --card:#fff;
+  --muted:#2c3e50; /* Darker text color */
+}
+);}
 .algorithm-box{display:none;margin-top:8px;background:linear-gradient(180deg,#eef7ff,#fff);padding:8px;border-left:4px solid var(--accent);border-radius:6px;font-family:monospace;white-space:pre-wrap;}
 
 
