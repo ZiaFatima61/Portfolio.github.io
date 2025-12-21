@@ -5,65 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industrial & Urban Management Systems</title>
     <style>
-        body { background-color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 50px auto; padding: 40px; background-color: #ffffff; border: 3px double black; position: relative; }
-        .container::before, .container::after { content: ""; position: absolute; width: 20px; height: 3px; background: black; }
-        .container::before { top: -3px; left: -3px; }
-        .container::after { bottom: -3px; right: -3px; }
-        h1 { text-align: center; color: #333; margin-bottom: 30px; }
-        h2 { color: #222; margin-top: 30px; border-bottom: 2px solid #333; display: inline-block; }
-        h3 { color: #444; margin-top: 25px; }
-        ul { list-style-type: disc; padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        body { background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 950px; margin: 50px auto; padding: 40px; background-color: #ffffff; border: 3px double #333; position: relative; }
+        .container::before, .container::after { content: ""; position: absolute; width: 30px; height: 5px; background: #2c3e50; }
+        .container::before { top: -5px; left: -5px; }
+        .container::after { bottom: -5px; right: -5px; }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
+        h2 { color: #e67e22; margin-top: 35px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h3 { color: #2980b9; margin-top: 25px; }
+        ul { list-style-type: square; padding-left: 25px; }
+        li { margin-bottom: 12px; line-height: 1.5; color: #444; }
+        .sdg-tag { font-weight: bold; color: #27ae60; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Industrial & Urban Management Systems</h1>
+        <h1>Industrial & Urban Management Portfolio</h1>
 
-        <h2>Urban Infrastructure</h2>
+        <h2>Section A: Smart Urban Infrastructure</h2>
 
         <h3>1. Industrial Waste Collection Route Optimization</h3>
         <ul>
-            <li>Aligns with SDG 11 (Sustainable Cities) by reducing carbon emissions through optimized logistics.</li>
-            <li>Uses Graph Theory to find the shortest path for collection vehicles based on real-time bin levels.</li>
-            <li>Reduces fuel consumption and operational costs for heavy industrial zones.</li>
-            <li>Ensures timely removal of hazardous waste to prevent environmental contamination.</li>
+            <li><span class="sdg-tag">SDG 11 (Sustainable Cities):</span> Reduces the carbon footprint of heavy machinery.</li>
+            <li>Uses <strong>Graph Theory</strong> to solve the Traveling Salesperson Problem (TSP) for industrial zones.</li>
+            <li>Dynamic routing based on bin fill-levels sensed via IoT ultrasonic sensors.</li>
+            <li>Optimizes fuel consumption by $15-20\%$ through shortest-path calculation.</li>
         </ul>
 
         <h3>2. Smart Parking Violation Detection</h3>
         <ul>
-            <li>Supports SDG 9 by improving urban infrastructure and traffic management.</li>
-            <li>Automates detection of unauthorized parking using Computer Vision and sensor data.</li>
-            <li>Reduces road bottlenecks and improves the flow of emergency service vehicles.</li>
-            <li>Provides real-time data logs for municipal authorities to monitor high-violation zones.</li>
+            <li><span class="sdg-tag">SDG 9 (Infrastructure):</span> Enhances road safety and logistical flow.</li>
+            <li>Uses <strong>Pattern Matching</strong> and Computer Vision to detect vehicles in restricted "No-Loading" zones.</li>
+            <li>Reduces manual surveillance costs and automates time-stamped evidence logging.</li>
+            <li>Improves throughput in narrow industrial corridors.</li>
         </ul>
 
         <h3>3. Real-Time Traffic Signal Timing Optimization</h3>
         <ul>
-            <li>Aligns with SDG 11 and SDG 13 (Climate Action) by reducing vehicle idling time.</li>
-            <li>Dynamically adjusts signal cycles based on live traffic density using Max-Flow algorithms.</li>
-            <li>Minimizes congestion and travel time in high-density industrial corridors.</li>
-            <li>Prioritizes freight movement during peak production hours.</li>
+            <li><span class="sdg-tag">SDG 13 (Climate Action):</span> Lowers emissions from idling industrial trucks.</li>
+            <li>Employs <strong>Max-Flow Algorithms</strong> to balance vehicle density across city grids.</li>
+            <li>Adjusts green-light intervals in real-time based on live traffic camera feeds.</li>
         </ul>
 
-        <h2>Industrial Operations & Safety</h2>
+        <h2>Section B: Industrial Operations & Safety</h2>
 
         <h3>4. Industrial Land Plot Allocation</h3>
         <ul>
-            <li>Optimizes the spatial distribution of industrial units based on utility access and zone type.</li>
-            <li>Uses Backtracking and Bin Packing algorithms to maximize land utilization efficiency.</li>
-            <li>Ensures compliance with safety buffers between different industry types (e.g., chemical vs. food).</li>
-            <li>Streamlines the bidding and allocation process for transparent urban development.</li>
+            <li><span class="sdg-tag">Resource Efficiency:</span> Automates the complex task of fitting irregular industrial units into master plans.</li>
+            <li>Uses <strong>Backtracking</strong> to ensure optimal "Bin Packing" of industrial land.</li>
+            <li>Maintains safety buffers between hazardous chemical units and commercial zones.</li>
         </ul>
 
         <h3>5. Chemical Storage Safety Monitoring</h3>
         <ul>
-            <li>Aligns with SDG 3 (Good Health) and SDG 9 (Industry Innovation) by preventing workplace disasters.</li>
-            <li>Uses IoT sensor grids to monitor heat, pressure, and chemical vapor concentration.</li>
-            <li>Features a Priority-based alert system to handle critical leaks instantly via Min-Heaps.</li>
-            <li>Provides predictive analysis to identify potential reaction risks before they occur.</li>
-        </ul>
+            <li><span class="sdg-tag">SDG 3 (Health & Safety):</span> Prevents workplace catastrophes and gas leaks.</li>
+            <li>Features a <strong>Priority-Queue</strong> alert system to handle high-pressure or high-temp triggers first.</li>
+            <li>Uses AI to monitor chemical compatibility and predict reactive volatility.</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Reflection: DAA in Industry</title>
+<style>
+    body { background-color: #D8B98B; font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+    .container { width: 80%; background: #ffffff; padding: 40px; margin: 50px auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    h1 { color: #2c3e50; border-left: 5px solid #e67e22; padding-left: 15px; }
+    h2 { color: #34495e; margin-top: 30px; font-size: 22px; }
+    p { font-size: 17px; line-height: 1.8; color: #444; margin-bottom: 20px; }
+    .box { background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #ddd; margin: 10px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>DAA Project Reflection</h1>
+
+    <h2>Motivation & Problem Solving</h2>
+    <p>
+        These industrial ideas were motivated by the "Static Inefficiency" of modern cities. Traditional waste routes and traffic signals follow fixed schedules, which is inefficient. By applying <strong>Design and Analysis of Algorithms (DAA)</strong>, we can move from static systems to dynamic, self-optimizing ecosystems that mirror the efficiency of natural patterns.
+    </p>
+
+    <h2>System Efficiency (Time & Space)</h2>
+    <div class="box">
+        <strong>Time Complexity:</strong> Crucial for Traffic and Safety. A chemical leak alert must be processed in $O(1)$ or $O(\log n)$ time using a Priority Queue; an $O(n^2)$ search could lead to disaster.
+        <br><br>
+        <strong>Space Complexity:</strong> Important for Land Allocation. Storing massive spatial maps requires optimized data structures like Quad-trees or Segment Trees to save memory.
     </div>
-</body>
-</html>
+
+    <h2>Data Organization Strategy</h2>
+    <p>
+        For <strong>Waste Management</strong>, we utilize <strong>Adjacency Lists</strong> for graphs because city maps are typically sparse. For <strong>Land Allocation</strong>, we use <strong>2D Arrays</strong> to represent coordinates. For <strong>Chemical Safety</strong>, a <strong>Min-Heap</strong> ensures the highest priority emergency is always handled first.
+    </p>
+
+    <h2>Algorithmic Techniques Used</h2>
+    <p>
+        • <strong>Greedy:</strong> Finding the next nearest pickup point for waste trucks.<br>
+        • <strong>Backtracking:</strong> Fitting different sized industrial plots into a fixed land grid.<br>
+        • <strong>Divide & Conquer:</strong> Segmenting large traffic networks into smaller, manageable zones.<br>
+        • <strong>Shortest Path (Dijkstra):</strong> Emergency vehicle routing through smart traffic grids.
+    </p>
