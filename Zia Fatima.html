@@ -61,7 +61,7 @@
     <div class="case-section">
       <h3>Implementation Steps</h3>
       <ul>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">AVL Tree</a> - to store tenant and shop details using the unique Shop ID as the key, enabling efficient lookup while maintaining sorted order.</li>
+        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">AVL Tree</a> - To store tenant and shop details using the unique Shop ID as the key, enabling efficient lookup while maintaining sorted order.</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Priority%20Queue(mall).cpp" target="_blank" rel="noopener noreferrer">Priority Queue (Max-Heap)</a> - For automated shop allocation.
 Shops or tenants are prioritized based on factors like demand, rent range, footfall zone, or business category.best available shop first, making allocation fast, fair, and optimized.
 </li>
@@ -154,10 +154,10 @@ Example: “Is this product available in Store S110?” → instant lookup.</li>
       <ul>
         <li>The entire forest is represented as a graph <a href="https://github.com/ZiaFatima61/DSA_Codes/tree/main/Graph%20Algorithms" target="_blank" rel="noopener noreferrer">(BFS/DFS)</a> - Nodes as Sensor locations,
             Edges as Connectivity between sensor nodes,
-            Weights as Distance, vegetation difficulty, or fire spread time
+            Weights as Distance, vegetation difficulty, or fire spread time.
         </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Priority Queue</a> - Used to prioritize highest temperature nodes, areas with maximum smoke, fastest fire-spreading zones</li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Circular Queue</a> - Used to store continuous sensor readings</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Priority%20Queue(Forest).cpp" target="_blank" rel="noopener noreferrer">Priority Queue</a> - Used to prioritize highest temperature nodes, areas with maximum smoke, fastest fire-spreading zones</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Circular%20Queue(forest).cpp" target="_blank" rel="noopener noreferrer">Circular Queue</a> - Used to store continuous sensor readings</li>
         <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree</a> - Used to maintain sorted order of risk levels</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Dijkstra(fire).cpp" target="_blank" rel="noopener noreferrer">Dijkstra’s Algorithm</a> - Used for finding shortest path for firefighters and nearest water source location</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Prims.cpp" target="_blank" rel="noopener noreferrer">Minimum Spanning Tree (Prim's) </a> - Used to connect sensors with minimum wiring cost, reduce communication links, Optimize maintenance routes</li>
@@ -174,7 +174,7 @@ Example: “Is this product available in Store S110?” → instant lookup.</li>
   <div id="tourism" class="case-block" style="display: none;">
     <h2 class="idea-title">Tourism Management</h2>
     <p class="idea-summary">
-      It cover navigation, parking, inventory, local business promotions, personalised user experience, crowd management, safety and customer service.
+      It covers Hotel & Resort Booking Optimization, Tourism Recommendation System, Transport & Route Optimization, Digital Ticketing & Pass Management and Environmental & Heritage Protection. 
     </p>
 
     <div class="case-section">
@@ -202,10 +202,10 @@ Example: “Is this product available in Store S110?” → instant lookup.</li>
     <div class="case-section">
       <h3>Implementation Steps </h3>
       <ul>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">AVL Tree</a> -To sort price list
-We use an AVL Tree to maintain hotel and resort prices in sorted order, ensuring quick updates and efficient searching for budget-friendly options.
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/AVL%20Tree/AVL%20Tree(Tourism).cpp" target="_blank" rel="noopener noreferrer">AVL Tree</a> -To sort price list
+we use an AVL Tree to maintain hotel and resort prices in sorted order, ensuring quick updates and efficient searching for budget-friendly options.
 </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Hash Maps</a> - To store booking details
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Hashing/Hash%20map(tourism).cpp" target="_blank" rel="noopener noreferrer">Hash Maps</a> - To store booking details
 Customer bookings, room IDs, dates, and payment status are stored in a Hash Map for O(1) access during check-ins and cancellations.
 </li>
         <li>Greedy Algorithm - To allocate best available room quickly
@@ -216,21 +216,18 @@ When double bookings occur, backtracking helps explore alternate room combinatio
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/tree/main/Sorting%20Algorithms" target="_blank" rel="noopener noreferrer">Quick Sort + Binary Search</a> -  To suggest activities in order
 Activities are sorted by time, popularity, or category. Binary search helps the system quickly suggest suitable activities based on user preferences.
 </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">ArrayList (linked list)</a>- To store visit history
-A dynamic list stores each tourist’s visited places in sequence, allowing quick addition and easy retrieval for recommendations.
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Linked%20List/SLL.cpp" target="_blank" rel="noopener noreferrer">ArrayList (linked list)</a>- To store visit history of dynamic list, stores each tourist’s visited places in sequence, allowing quick addition and easy retrieval for recommendations.
 </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a>- All pairs shortest paths for route optimization
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Floyd-Warshall.cpp" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a>- All pairs shortest paths for route optimization
 This algorithm computes the shortest travel route between every pair of tourist spots, helping in planning a complete day-wise itinerary.
 </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Hash Map, Queue, Stack</a>- To store pass info, ticket counters (queue), undo operations (stack)
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Hashing/Hash%20map(tourism1).cpp" target="_blank" rel="noopener noreferrer">Hash Map</a>, <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Queue.cpp" target="_blank" rel="noopener noreferrer">Queue</a>, <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Stack/Stack.cpp" target="_blank" rel="noopener noreferrer">Stack</a>- To store pass info, ticket counters (queue), undo operations (stack)
 Hash Maps store pass details, Queues manage visitors waiting at ticket counters, and Stacks help undo booking or navigation actions.
 </li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">Merge Sort </a> - To arrange visitors by entry time
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Sorting%20Algorithms/Merge%20Sort(Tourism).cpp" target="_blank" rel="noopener noreferrer">Merge Sort </a> - To arrange visitors by entry time
 Visitors entering at different times are sorted to ensure smooth crowd control and during peak-hour analytics.
 </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">DFS</a> - To detect abnormal activities in forests
-DFS traverses forest surveillance data to identify unusual movements or missing sensor signals, supporting wildlife protection.
-</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/DFS(Tourism).cpp" target="_blank" rel="noopener noreferrer">DFS</a> - To explore all attractions around a chosen area.</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Searching%20Algorithms/Rabin%20Karp.cpp" target="_blank" rel="noopener noreferrer">Pattern Recognition Rabin-Karp  </a>– To detect illegal activities from logs
 Rabin–Karp quickly searches large logs for suspicious keywords or repeated illegal patterns in travel records.</li>
       </ul>
@@ -255,16 +252,16 @@ Rabin–Karp quickly searches large logs for suspicious keywords or repeated ill
       <p>Smart Water Management system :</p>
       <ul>
         <li>Model water pipelines as a Directed Weighted Graph</li>
-        <li>Use <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a> Algorithm to detect inefficient water routes and compute all-pair shortest flow paths</li>
-        <li>Apply <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Union–Find (Disjoint Set)</a> to identify connected and disconnected water supply regions</li>
-        <li>Store water consumption logs in a <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree (BST)</a> for fast range queries</li>
+        <li>Use <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Floyd-Warshall(Water).cpp" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a> Algorithm to detect inefficient water routes and compute all-pair shortest flow paths</li>
+        <li>Apply <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Union%20Find/Union%20Find.cpp" target="_blank" rel="noopener noreferrer">Union–Find (Disjoint Set)</a> to identify connected and disconnected water supply regions</li>
+        <li>Store water consumption logs in a <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Binary%20Search%20Tree/BST.cpp" target="_blank" rel="noopener noreferrer">Binary Search Tree (BST)</a> for fast range queries</li>
       </ul>
       <p>Smart Electricity Distribution System :</p>
       <ul>
         <li>Represent electrical grid circuits as a Graph with weighted edges for voltage/resistance</li>
-        <li>Use <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Bellman–Ford</a> Algorithm to detect power fluctuations or negative-cycle faults in the grid</li>
-        <li>Apply <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Segment Trees</a> to manage and query electricity usage across different time intervals</li>
-        <li>Store outage reports and repair tasks in a <a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Circular Queue</a> for efficient rotation and handling</li>
+        <li>Use <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Bellman%20Ford.cpp" target="_blank" rel="noopener noreferrer">Bellman–Ford</a> Algorithm to detect power fluctuations or negative-cycle faults in the grid</li>
+        <li>Apply <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Segment%20Tree/Segment%20Tree.cpp" target="_blank" rel="noopener noreferrer">Segment Trees</a> to manage and query electricity usage across different time intervals</li>
+        <li>Store outage reports and repair tasks in a <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Circular%20Queue(Electricity).cpp" target="_blank" rel="noopener noreferrer">Circular Queue</a> for efficient rotation and handling</li>
       </ul>
     </div>
     <div class="case-section">
