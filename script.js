@@ -17,12 +17,12 @@ const tree = {
   id:'root', title:'Business Ideas',
   children:[
     { id:'agri', title:'AGRICULTUR' <span class="bright-text"></span>, children:[1,2,3]},
-    { id:'retail', title:'RETAIL & LIVING, children:[4]},
-    { id:'ship', title:'BUSINESS & ENTREPRENEURSHIP' , children:[5]},
-    { id:'ent', title:'ENTERTAINMENT', children:[6]},
-    { id:'nursery', title:'PLANT NURSERY', children:[7]},
-    { id:'sport', title:'SPORTS & HEALTH', children:[8,10]},
-    { id:'apartment', title:'APARTMENT COMPLEXES', children:[9]}
+    { id:'retail', title:'RETAIL & LIVING', children:[4]},
+    { id:'ship', title:" Business & Entrepreneurship' , children:[5]},
+    { id:'ent', title:'Etertainment', children:[6]},
+    { id:'nursery', title:'Plant Nursery', children:[7]},
+    { id:'sport', title:'Sports & Health', children:[8,10]},
+    { id:'apartment', title:'Apartment Complexes', children:[9]}
   ]
 };
 <span class="bright-text"></span>
