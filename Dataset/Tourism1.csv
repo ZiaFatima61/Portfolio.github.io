@@ -1,0 +1,63 @@
+TouristID,Place,Date,HoursSpent
+1,Red Fort,2025-12-01,3
+1,India Gate,2025-12-01,2
+1,Qutub Minar,2025-12-02,4
+2,Gateway of India,2025-11-25,5
+2,Marine Drive,2025-11-25,2
+3,Taj Mahal,2025-12-10,6
+3,Fatehpur Sikri,2025-12-11,5
+4,Mysore Palace,2025-11-20,4
+4,Chamundi Hill,2025-11-21,3
+5,Charminar,2025-12-05,2
+5,Golconda Fort,2025-12-06,5
+6,Jama Masjid,2025-12-07,3
+6,Lodhi Garden,2025-12-08,2
+7,Victoria Memorial,2025-12-03,4
+7,Eden Gardens,2025-12-03,2
+8,Amer Fort,2025-11-29,5
+8,City Palace Jaipur,2025-11-30,3
+9,Konark Sun Temple,2025-12-12,6
+9,Puri Beach,2025-12-13,4
+10,Golden Temple,2025-11-28,5
+10,Jallianwala Bagh,2025-11-28,3
+11,Meenakshi Temple,2025-12-14,4
+11,Thirumalai Nayakkar Palace,2025-12-15,3
+12,Humayun's Tomb,2025-12-16,2
+12,Lotus Temple,2025-12-16,2
+13,Sanchi Stupa,2025-11-27,5
+13,Bhopal Lake,2025-11-28,3
+14,Chittorgarh Fort,2025-12-09,4
+14,Kumbhalgarh Fort,2025-12-10,5
+15,Ajanta Caves,2025-12-11,6
+15,Ellora Caves,2025-12-12,5
+16,Ranthambore National Park,2025-11-22,4
+16,Fatehpur Sikri,2025-11-23,3
+17,Sundarbans,2025-12-01,5
+17,Howrah Bridge,2025-12-02,2
+18,Mysore Zoo,2025-12-03,3
+18,Brindavan Gardens,2025-12-04,4
+19,Lucknow Bara Imambara,2025-12-05,3
+19,Lucknow Rumi Darwaza,2025-12-05,2
+20,Char Minar,2025-12-06,4
+20,Hussain Sagar Lake,2025-12-07,3
+21,Jaisalmer Fort,2025-12-08,5
+21,Sam Sand Dunes,2025-12-09,6
+22,Goa Beach,2025-11-30,6
+22,Basilica of Bom Jesus,2025-12-01,3
+23,Coorg Abbey Falls,2025-12-02,4
+23,Coorg Raja’s Seat,2025-12-03,3
+24,Kanha National Park,2025-12-04,5
+24,Bandhavgarh National Park,2025-12-05,4
+25,Shimla Mall Road,2025-11-28,3
+25,Jakhoo Temple,2025-11-29,2
+26,Rishikesh Rafting,2025-11-30,5
+26,Triveni Ghat,2025-12-01,3
+27,Manali Solang Valley,2025-12-02,4
+27,Hidimba Temple,2025-12-03,2
+28,Haridwar Ganga Aarti,2025-12-04,3
+28,Mansa Devi Temple,2025-12-05,2
+29,Coimbatore Marudamalai Temple,2025-12-06,4
+29,Perur Pateeswarar Temple,2025-12-07,3
+30,Bangalore Lalbagh,2025-12-08,4
+30,Bangalore Palace,2025-12-09,3
+...
