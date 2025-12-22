@@ -384,3 +384,101 @@ body {
 }
 
 
+/* ======== SIMPLE TABLE STYLE ======== */
+.algorithm-table-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px 0 30px 0;
+    padding: 30px;
+}
+
+.algorithm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+}
+
+.algorithm-table th, .algorithm-table td {
+    border: 1px solid #ccc; /* thin light gray border */
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.algorithm-table th {
+    font-weight: 600;
+}
+
+.algorithm-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* optional subtle stripe */
+}
+
+.algorithm-table tr:hover {
+    background-color: #f1f1f1; /* subtle hover effect */
+}
+
+.algorithm-table td {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .algorithm-table th, .algorithm-table td {
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+}
+.algorithm-table-wrapper {
+    width: 100%;
+    overflow-x: auto;   /* fixes width overflow */
+}
+
+.forest-fire-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 3px solid #0c2340;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.Water-electricity-image{
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 3px solid #0c2340;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.Tourism-image{
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 3px solid #0c2340;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.Mall-image{
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 3px solid #0c2340;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+}
