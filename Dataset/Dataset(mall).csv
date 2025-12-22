@@ -1,0 +1,51 @@
+ShopID,TenantName,Category,Status
+101,ZARA,Clothing,Occupied
+102,NIKE,Sportswear,Occupied
+103,H&M,Clothing,Occupied
+104,ADIDAS,Sportswear,Occupied
+105,STARBUCKS,Café,Occupied
+106,PUMA,Sportswear,Vacant
+107,RELIANCE DIGITAL,Electronics,Occupied
+108,BATA,Footwear,Vacant
+109,DOMINOS,Restaurant,Occupied
+110,MINISO,Lifestyle,Occupied
+111,DECATHLON,Sports,Occupied
+112,TRENDS,Clothing,Occupied
+113,KFC,Restaurant,Occupied
+114,CCD,Café,Vacant
+115,SONY CENTER,Electronics,Occupied
+116,SAMSUNG,Electronics,Occupied
+117,HP WORLD,Electronics,Occupied
+118,LEVIS,Clothing,Occupied
+119,WOODLAND,Footwear,Occupied
+120,SKECHERS,Footwear,Vacant
+121,CROMA,Electronics,Occupied
+122,RELIANCE TRENDS,Clothing,Occupied
+123,MCDONALDS,Restaurant,Occupied
+124,BURGER KING,Restaurant,Occupied
+125,SUBWAY,Restaurant,Vacant
+126,PETER ENGLAND,Clothing,Occupied
+127,ALLEN SOLLY,Clothing,Occupied
+128,VAN HEUSEN,Clothing,Occupied
+129,UCB,Clothing,Vacant
+130,MAX,Clothing,Occupied
+131,LIFESTYLE,Department Store,Occupied
+132,BIG BAZAAR,Supermarket,Occupied
+133,SMART BAZAAR,Supermarket,Occupied
+134,RELIANCE SMART,Supermarket,Occupied
+135,PANTALOONS,Clothing,Occupied
+136,KIDS ZONE,Kids Wear,Vacant
+137,FIRSTCRY,Kids Wear,Occupied
+138,TOYS R US,Toys,Occupied
+139,CROSSWORD,Bookstore,Occupied
+140,LANDMARK,Bookstore,Vacant
+141,TITAN,Watches,Occupied
+142,FASTRACK,Accessories,Occupied
+143,TANEIRA,Ethnic Wear,Occupied
+144,FABINDIA,Ethnic Wear,Occupied
+145,NYKAA,Cosmetics,Occupied
+146,THE BODY SHOP,Cosmetics,Occupied
+147,HEALTH & GLOW,Cosmetics,Vacant
+148,RELIANCE JEWELS,Jewelry,Occupied
+149,MALABAR GOLD,Jewelry,Occupied
+150,TANISHQ,Jewelry,Occupied
