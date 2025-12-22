@@ -34,8 +34,8 @@
   </div>
 
   <div id="shoppingMall" class="case-block" style="display: block;">
-    <h2 class="idea-title">Shopping Mall Management</h2>
-    <p>The management of a shopping mall can be broken down into different parts, including Store & Tenant Management, Visitor Navigation & Flow Management, and Mall Inventory & Product Search.</p>
+    <h3 class="idea-title">Shopping Mall Management</h3>
+     <p class="idea-summary">The management of a shopping mall can be broken down into different parts, including Store & Tenant Management, Visitor Navigation & Flow Management, and Mall Inventory & Product Search.</p>
 
     <div class="case-section">
       <h3>SDG Alignment</h3>
@@ -61,19 +61,18 @@
     <div class="case-section">
       <h3>Implementation Steps</h3>
       <ul>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">AVL Tree</a> - To store tenant and shop details using the unique Shop ID as the key, enabling efficient lookup while maintaining sorted order.</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/AVL%20Tree/AVL%20tree(mall).cpp" target="_blank" rel="noopener noreferrer">AVL Tree</a> - To store tenant and shop details using the unique Shop ID as the key, enabling efficient lookup while maintaining sorted order. Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/Dataset%20(mall).csv" target="_blank" rel="noopener noreferrer">DATASET</a></li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Priority%20Queue(mall).cpp" target="_blank" rel="noopener noreferrer">Priority Queue (Max-Heap)</a> - For automated shop allocation.
-Shops or tenants are prioritized based on factors like demand, rent range, footfall zone, or business category.best available shop first, making allocation fast, fair, and optimized.
-</li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree</a> -  To manage shop contracts sorted by expiry dates.
+Shops or tenants are prioritized based on factors like demand, rent range, footfall zone, or business category.best available shop first, making allocation fast, fair, and optimized. </li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Binary%20Search%20Tree/BST(mall).cpp" target="_blank" rel="noopener noreferrer">Binary Search Tree</a> -  To manage shop contracts sorted by expiry dates.
 It helps the system quickly access the earliest expiring contract, insert new ones, or update the existing ones in O(log n) time.
 This ensures smooth contract renewals and timely notifications.
 </li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Linked Lists</a> - To maintain shop lists. Shops on each floor or zone are stored as nodes in a linked list (shop ID, tenant, category, status).
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Linked%20List/SLL(mall).cpp" target="_blank" rel="noopener noreferrer">Linked Lists</a> - To maintain shop lists. Shops on each floor or zone are stored as nodes in a linked list (shop ID, tenant, category, status).
 It allows the system to add new shops, remove tenants, or mark vacancies in O(1) time without shifting elements like in arrays.
-This ensures smooth handling of frequent shop changes, making vacancy updates fast and flexible.</li>
+This ensures smooth handling of frequent shop changes, making vacancy updates fast and flexible. Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/Dataset%20(mall%20floor).csv" target="_blank" rel="noopener noreferrer">DATASET</a></li>
 <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Kruskal.cpp" target="_blank" rel="noopener noreferrer">Kruskal’s Algorithm</a> - To find minimum cost network (wiring, security lines, Wi-Fi).</li>
-<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Red-Black Tree</a> - To organize stores into floors and zones, allowing fast and efficient store lookup and management.</li>
+<li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Red%20Black%20Tree/Red%20Black%20Tree.cpp" target="_blank" rel="noopener noreferrer">Red-Black Tree</a> - To organize stores into floors and zones, allowing fast and efficient store lookup and management.</li>
       </ul>
     </div>
     <div class="case-section">
@@ -117,21 +116,63 @@ The zone with the highest crowd count always rises to the top, helping in crowd 
       <ul>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Trie/Trie.cpp" target="_blank" rel="noopener noreferrer">Trie</a> - To give instant auto-suggestions for product names.
 This helps users type "nic" and instantly get “Nike”, “Nicolas Perfume”, etc.</li>
-<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">KMP Algorithm</a> - Used to efficiently search exact product names in large catalogs.</li>
-<li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Boyer–Moore Algorithm</a> - used for fast keyword search in long product descriptions and reviews.</li>
+<li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Searching%20Algorithms/KMP(mall).cpp" target="_blank" rel="noopener noreferrer">KMP Algorithm</a> - Used to efficiently search exact product names in large catalogs.</li>
+<li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Searching%20Algorithms/Boyer%20Moore(mall).cpp" target="_blank" rel="noopener noreferrer">Boyer–Moore Algorithm</a> - used for fast keyword search in long product descriptions and reviews.</li>
 <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Lookup%20Table/Lookup%20Table.cpp" target="_blank" rel="noopener noreferrer">Lookup Table</a> - allow instant access from a keyword to related products.</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Binary%20Search%20Tree/BST.cpp" target="_blank" rel="noopener noreferrer">Binary Search</a> - On sorted product lists to instantly check if a product exists in a specific shop.
 This gives O(log n) search time.</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Sorting%20Algorithms/Merge%20Sort.cpp" target="_blank" rel="noopener noreferrer">Merge Sort</a> - To sort products by price, brand, or popularity.
 This creates smooth and efficient product filtering in the mall app.</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Hashing/Hash%20map.cpp" target="_blank" rel="noopener noreferrer">Hash Maps</a> - To store product availability for every store.
-Example: “Is this product available in Store S110?” → instant lookup.</li>
+Example: “Is this product available in Store S110?” → instant lookup. Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/product.csv" target="_blank" rel="noopener noreferrer">DATASET</a></li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Fenwick%20Tree/Fenwick%20Tree.cpp" target="_blank" rel="noopener noreferrer">Fenwick Tree</a> - To  track frequency of product purchases.</li>
-        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Heap%20Sort/Heap%20Sort.cpp" target="_blank" rel="noopener noreferrer">Heap Sort</a> - To find top-k trending products.</li>
-        <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Sparse Table</a> - To quickly analyze product sales trends over different time ranges (daily/weekly)</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Sorting%20Algorithms/Heap%20sort(mall).cpp" target="_blank" rel="noopener noreferrer">Heap Sort</a> - To find top-k trending products.</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Sparse%20Table/Sparse.cpp" target="_blank" rel="noopener noreferrer">Sparse Table</a> - To quickly analyze product sales trends over different time ranges (daily/weekly)</li>
       </ul>
     </div>
-  </div>  
+     <div class="case-section">
+    <h3>Efficiency</h3>
+    </div>
+    <div class="algorithm-table-container">
+    <div class="algorithm-table-wrapper">
+    <table class="algorithm-table">
+        <tr>
+            <th>Algorithm / Data Structure</th>
+            <th>Efficiency</th>
+            <th>Space Complexity</th>
+        </tr>
+        <tr><td>AVL Tree</td><td>O(log n) search/insert/delete</td><td>O(n)</td></tr>
+        <tr><td>Priority Queue (Max-Heap)</td><td>O(log n) insert/extract-max</td><td>O(n)</td></tr>
+        <tr><td>Binary Search Tree (BST)</td><td>O(log n) on average</td><td>O(n)</td></tr>
+        <tr><td>Linked List</td><td>O(n) search, O(1) insert/delete</td><td>O(n)</td></tr>
+        <tr><td>Kruskal’s Algorithm</td><td>O(E log E)</td><td>O(V + E)</td></tr>
+        <tr><td>Red-Black Tree</td><td>O(log n) search/insert/delete</td><td>O(n)</td></tr>
+        <tr><td>Graph</td><td>O(V + E) traversal</td><td>O(V + E)</td></tr>
+        <tr><td>BFS</td><td>O(V + E)</td><td>O(V)</td></tr>
+        <tr><td>Dijkstra’s Algorithm</td><td>O(E log V) with min-heap</td><td>O(V + E)</td></tr>
+        <tr><td>Trie</td><td>O(L) per search (L = length of key)</td><td>O(ALPHABET_SIZE × L × n)</td></tr>
+        <tr><td>Max-Heap</td><td>O(log n) insert/extract-max</td><td>O(n)</td></tr>
+        <tr><td>KMP Algorithm</td><td>O(n + m)</td><td>O(m)</td></tr>
+        <tr><td>Boyer–Moore Algorithm</td><td>O(n/m) on average</td><td>O(m + ALPHABET_SIZE)</td></tr>
+        <tr><td>Lookup Table</td><td>O(1)</td><td>O(n)</td></tr>
+        <tr><td>Binary Search</td><td>O(log n)</td><td>O(1)</td></tr>
+        <tr><td>Merge Sort</td><td>O(n log n)</td><td>O(n)</td></tr>
+        <tr><td>Hash Maps</td><td>O(1) average</td><td>O(n)</td></tr>
+        <tr><td>Fenwick Tree (Binary Indexed Tree)</td><td>O(log n) update/query</td><td>O(n)</td></tr>
+        <tr><td>Heap Sort</td><td>O(n log n)</td><td>O(1)</td></tr>
+        <tr><td>Sparse Table</td><td>O(1) query, O(n log n) preprocessing</td><td>O(n log n)</td></tr>
+    </table>
+  </div> 
+  </div> 
+   <img
+    src="https://raw.githubusercontent.com/ZiaFatima61/Portfolio.github.io/main/Shopping%20Mall%20Management.png"
+    alt="Shopping Mall Management Diagram"
+    class="Mall-image"
+  />
+
+</div>    
+
+</div> 
 
   <div id="forestFire" class="case-block" style="display: none;">
     <h2 class="idea-title">Smart Forest Fire Detection System</h2>
@@ -157,7 +198,7 @@ Example: “Is this product available in Store S110?” → instant lookup.</li>
             Weights as Distance, vegetation difficulty, or fire spread time.
         </li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Priority%20Queue(Forest).cpp" target="_blank" rel="noopener noreferrer">Priority Queue</a> - Used to prioritize highest temperature nodes, areas with maximum smoke, fastest fire-spreading zones</li>
-        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Circular%20Queue(forest).cpp" target="_blank" rel="noopener noreferrer">Circular Queue</a> - Used to store continuous sensor readings</li>
+        <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Circular%20Queue(forest).cpp" target="_blank" rel="noopener noreferrer">Circular Queue</a> - Used to store continuous sensor readings. Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/Forest.csv" target="_blank" rel="noopener noreferrer">DATASET</a></li>
         <li><a href="https://github.com/topics/hashmap" target="_blank" rel="noopener noreferrer">Binary Search Tree</a> - Used to maintain sorted order of risk levels</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Dijkstra(fire).cpp" target="_blank" rel="noopener noreferrer">Dijkstra’s Algorithm</a> - Used for finding shortest path for firefighters and nearest water source location</li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Prims.cpp" target="_blank" rel="noopener noreferrer">Minimum Spanning Tree (Prim's) </a> - Used to connect sensors with minimum wiring cost, reduce communication links, Optimize maintenance routes</li>
@@ -169,6 +210,37 @@ Example: “Is this product available in Store S110?” → instant lookup.</li>
          Using data structures and algorithms—like sensor data trees, graph-based alert networks, and pattern-detection algorithms—the smart fire detection system identifies fires early and sends alerts quickly. This reduces response time, prevents large-scale forest damage, and protects wildlife, nearby communities, and natural resources. Overall, it creates a safer, more resilient, and environmentally sustainable forest ecosystem.
       </p>
     </div>
+    
+     <div class="case-section">
+    <h3>Efficiency</h3>
+    </div>
+    <div class="algorithm-table-container">
+    <div class="algorithm-table-wrapper">
+      <table class="algorithm-table">
+      <tr>
+        <th>Algorithm / Data Structure</th>
+        <th>Efficiency</th>
+        <th>Space Complexity</th>
+      </tr>
+
+      <tr><td>Graph (BFS / DFS)</td><td>O(V + E)</td><td>O(V + E)</td></tr>
+      <tr><td>BFS</td><td>O(V + E)</td><td>O(V)</td></tr>
+      <tr><td>DFS</td><td>O(V + E)</td><td>O(V)</td></tr>
+      <tr><td>Priority Queue (Max-Heap)</td><td>O(log n) insert/extract</td><td>O(n)</td></tr>
+      <tr><td>Circular Queue</td><td>O(1) enqueue/dequeue</td><td>O(n)</td></tr>
+      <tr><td>Binary Search Tree (BST)</td><td>O(log n) on average</td><td>O(n)</td></tr>
+      <tr><td>Dijkstra’s Algorithm</td><td>O(E log V)</td><td>O(V + E)</td></tr>
+      <tr><td>Minimum Spanning Tree (Prim’s)</td><td>O(E log V)</td><td>O(V + E)</td></tr>
+    </table>
+  </div>
+</div>
+  <img
+    src="https://raw.githubusercontent.com/ZiaFatima61/Portfolio.github.io/main/Forest%20fire.png"
+    alt="Smart Forest Fire System Diagram"
+    class="forest-fire-image"
+  />
+
+
   </div>
 
   <div id="tourism" class="case-block" style="display: none;">
@@ -206,7 +278,7 @@ Example: “Is this product available in Store S110?” → instant lookup.</li>
 we use an AVL Tree to maintain hotel and resort prices in sorted order, ensuring quick updates and efficient searching for budget-friendly options.
 </li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Hashing/Hash%20map(tourism).cpp" target="_blank" rel="noopener noreferrer">Hash Maps</a> - To store booking details
-Customer bookings, room IDs, dates, and payment status are stored in a Hash Map for O(1) access during check-ins and cancellations.
+Customer bookings, room IDs, dates, and payment status are stored in a Hash Map for O(1) access during check-ins and cancellations. Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/Tourism.csv" target="_blank" rel="noopener noreferrer">DATASET</a>
 </li>
         <li>Greedy Algorithm - To allocate best available room quickly
 The system picks the optimal available room (closest match to price, view, or preference) without checking all combinations, ensuring fast confirmation.</li>
@@ -217,12 +289,12 @@ When double bookings occur, backtracking helps explore alternate room combinatio
 Activities are sorted by time, popularity, or category. Binary search helps the system quickly suggest suitable activities based on user preferences.
 </li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Linked%20List/SLL.cpp" target="_blank" rel="noopener noreferrer">ArrayList (linked list)</a>- To store visit history of dynamic list, stores each tourist’s visited places in sequence, allowing quick addition and easy retrieval for recommendations.
-</li>
+Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/Tourism1.csv" target="_blank" rel="noopener noreferrer">DATASET</a></li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Graph%20Algorithms/Floyd-Warshall.cpp" target="_blank" rel="noopener noreferrer">Floyd–Warshall</a>- All pairs shortest paths for route optimization
 This algorithm computes the shortest travel route between every pair of tourist spots, helping in planning a complete day-wise itinerary.
 </li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Hashing/Hash%20map(tourism1).cpp" target="_blank" rel="noopener noreferrer">Hash Map</a>, <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Queue/Queue.cpp" target="_blank" rel="noopener noreferrer">Queue</a>, <a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Stack/Stack.cpp" target="_blank" rel="noopener noreferrer">Stack</a>- To store pass info, ticket counters (queue), undo operations (stack)
-Hash Maps store pass details, Queues manage visitors waiting at ticket counters, and Stacks help undo booking or navigation actions.
+Hash Maps store pass details, Queues manage visitors waiting at ticket counters, and Stacks help undo booking or navigation actions. Here's the <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Dataset/Tourism2.csv" target="_blank" rel="noopener noreferrer">DATASET</a>
 </li>
         <li><a href="https://github.com/ZiaFatima61/DSA_Codes/blob/main/Sorting%20Algorithms/Merge%20Sort(Tourism).cpp" target="_blank" rel="noopener noreferrer">Merge Sort </a> - To arrange visitors by entry time
 Visitors entering at different times are sorted to ensure smooth crowd control and during peak-hour analytics.
@@ -232,6 +304,38 @@ Visitors entering at different times are sorted to ensure smooth crowd control a
 Rabin–Karp quickly searches large logs for suspicious keywords or repeated illegal patterns in travel records.</li>
       </ul>
     </div>
+     <div class="case-section">
+    <h3>Efficiency </h3>
+    </div>
+    <div class="algorithm-table-container">
+    <div class="algorithm-table-wrapper">
+      <table class="algorithm-table">
+      <tr>
+        <th>Algorithm / Data Structure</th>
+        <th>Efficiency</th>
+        <th>Space Complexity</th>
+      </tr>
+
+      <tr><td>AVL Tree</td><td>O(log n) search / insert / delete</td><td>O(n)</td></tr>
+      <tr><td>Hash Map</td><td>O(1) average</td><td>O(n)</td></tr>
+      <tr><td>Quick Sort</td><td>O(n log n) average</td><td>O(log n)</td></tr>
+      <tr><td>Binary Search</td><td>O(log n)</td><td>O(1)</td></tr>
+      <tr><td>ArrayList (Linked List)</td><td>O(n) search, O(1) insert</td><td>O(n)</td></tr>
+      <tr><td>Floyd–Warshall Algorithm</td><td>O(n³)</td><td>O(n²)</td></tr>
+      <tr><td>Queue</td><td>O(1) enqueue / dequeue</td><td>O(n)</td></tr>
+      <tr><td>Stack</td><td>O(1) push / pop</td><td>O(n)</td></tr>
+      <tr><td>Merge Sort</td><td>O(n log n)</td><td>O(n)</td></tr>
+      <tr><td>DFS</td><td>O(V + E)</td><td>O(V)</td></tr>
+      <tr><td>Rabin–Karp Algorithm</td><td>O(n + m) average</td><td>O(1)</td></tr>
+    </table>
+  </div>
+</div>
+ <img
+    src="https://raw.githubusercontent.com/ZiaFatima61/Portfolio.github.io/main/Tourism.png"
+    alt="Tourism Management Diagram"
+    class="Tourism-image"
+  />
+
   </div>
 
   <div id="waterElectricity" class="case-block" style="display: none;">
@@ -270,7 +374,35 @@ Rabin–Karp quickly searches large logs for suspicious keywords or repeated ill
          The integrated system improves resource efficiency by reducing leakages, energy loss, and service interruptions. Real-time monitoring ensures reliable delivery, while optimized distribution lowers operational costs and supports sustainable city growth. Together, they make essential utilities smarter, cleaner, and more resilient.
       </p>
     </div>
-  </div>
+     <div class="case-section">
+    <h3>Efficiency </h3>
+    </div>
+    <div class="algorithm-table-container">
+    <div class="algorithm-table-wrapper">
+      <table class="algorithm-table">
+  <tr>
+    <th>Algorithm / Data Structure</th>
+    <th>Efficiency</th>
+    <th>Space Complexity</th>
+  </tr>
+
+  <tr><td>Floyd–Warshall Algorithm</td><td>O(V³)</td><td>O(V²)</td></tr>
+  <tr><td>Union–Find (Disjoint Set)</td><td>O(α(n)) average</td><td>O(n)</td></tr>
+  <tr><td>Binary Search Tree (BST)</td><td>O(log n) average</td><td>O(n)</td></tr>
+  <tr><td>Bellman–Ford Algorithm</td><td>O(V × E)</td><td>O(V)</td></tr>
+  <tr><td>Segment Tree</td><td>O(log n) update / query</td><td>O(n)</td></tr>
+  <tr><td>Circular Queue</td><td>O(1) enqueue / dequeue</td><td>O(n)</td></tr>
+
+</table>
+ </div>
+</div>
+ <img
+    src="https://raw.githubusercontent.com/ZiaFatima61/Portfolio.github.io/main/Water%20and%20Electricity.png"
+    alt="Smart Water And Electricity System Diagram"
+    class="Water-electricity-image"
+  />
+
+</div>
 
 </section>
 
