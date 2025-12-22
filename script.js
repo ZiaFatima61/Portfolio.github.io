@@ -16,8 +16,8 @@ const ideaData = {
 const tree = {
   id:'root', title:'Business Ideas',
   children:[
-    { id:'agri', title:'AGRICULTUR' <span class="bright-text"></span>, children:[1,2,3]},
-    { id:'retail', title:'RETAIL & LIVING', children:[4]},
+    { id:'agri', title:'Agriculture' <span class="bright-text"></span>, children:[1,2,3]},
+    { id:'retail', title:'Retail & Living', children:[4]},
     { id:'ship', title:" Business & Entrepreneurship' , children:[5]},
     { id:'ent', title:'Etertainment', children:[6]},
     { id:'nursery', title:'Plant Nursery', children:[7]},
