@@ -1,6 +1,6 @@
 // ---------- Business Idea Data (kept same) ----------
 const ideaData = {
-  1:{title:"Dairy Farm Smart Management", text:""},
+  1:{title:"Dairy Farm Smart Management", text:"Soumya"},
   2:{title:"Beekeeping & Honey Production", text:"Modern apiary with hive-monitoring, pest detection and scheduled harvest to produce high-quality honey."},
   3:{title:"Mushroom Cultivation", text:"Controlled-environment indoor farming with automated humidity, temperature and lighting for high yields."},
   4:{title:"Café & Mini Mart", text:"Small neighborhood cafe and mini-mart with smart inventory, daily fresh items and local sourcing."},
@@ -16,16 +16,16 @@ const ideaData = {
 const tree = {
   id:'root', title:'Business Ideas',
   children:[
-    { id:'agri', title:'Agriculture' <span class="bright-text"></span>, children:[1,2,3]},
+    { id:'agri', title:'Agriculture', children:[1,2,3]},
     { id:'retail', title:'Retail & Living', children:[4]},
-    { id:'ship', title:" 'Business & Entrepreneurship' , children:[5]},
-    { id:'ent', title:'Etertainment', children:[6]},
+    { id:'ship', title:'Business & Entrepreneurship', children:[5]},
+    { id:'ent', title:'Entertainment', children:[6]},
     { id:'nursery', title:'Plant Nursery', children:[7]},
     { id:'sport', title:'Sports & Health', children:[8,10]},
     { id:'apartment', title:'Apartment Complexes', children:[9]}
   ]
 };
-<span class="bright-text"></span>
+
 // ---------- Render Tree ----------
 const treeWrap = document.getElementById('treeWrap');
 const detailedIdeas = document.getElementById('detailed-ideas');
