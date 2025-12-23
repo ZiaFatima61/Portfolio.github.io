@@ -178,55 +178,7 @@ In industrial management, efficiency is measured by <strong>Resource Utilization
     </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Industrial Systems Reflection</title>
-<style>
-    body { background-color: #D8B98B; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .container { width: 75%; background: #ffffff; padding: 30px; margin: 40px auto; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
-    h1, h2 { color: #3b2f2f; margin-bottom: 10px; }
-    p { font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 25px; }
-    strong { color: #2c3e50; }
-</style>
-</head>
-<body>
-<div class="container">
-<h1>Industrial Systems Reflection</h1>
-<h2>What motivated these ideas and what problems do they solve?</h2>
-<p>
-The motivation comes from the increasing complexity of urban industrialization. Waste collection routes are often inefficient, much like how a non-optimized search algorithm wastes cycles. By using <strong>Route Optimization</strong>, we solve the problem of high fuel waste. <strong>Land Allocation</strong> addresses the scarcity of space, ensuring industries are placed where they are most productive without violating safety norms. <strong>Chemical Safety</strong> systems solve the problem of delayed human response in high-risk zones, using automation to save lives.
-</p>
 
-<h2>What is efficiency in these systems?</h2>
-<p>
-In industrial management, efficiency is measured by <strong>Resource Utilization</strong> and <strong>Response Time</strong>:
-<br><br>
-• <strong>Waste Collection:</strong> $O(V^2)$ vs $O(E \log V)$ pathfinding determines if a city saves millions in fuel.<br>
-• <strong>Traffic Signals:</strong> Real-time processing requires $O(1)$ lookup of sensor data.<br>
-• <strong>Land Allocation:</strong> Optimized space complexity ensures maximum plots in minimum area.
-</p>
-
-<h2>Why do these solutions need proper data organization?</h2>
-<p>
-• <strong>Waste/Traffic:</strong> Use <strong>Graphs</strong> to represent city maps and intersections.<br>
-• <strong>Chemical Safety:</strong> Uses <strong>Min-Heaps</strong> to prioritize the most dangerous sensor alerts.<br>
-• <strong>Land Allocation:</strong> Uses <strong>2D Segment Trees</strong> or <strong>Grid-based Arrays</strong> for spatial mapping.<br>
-• <strong>Violation Detection:</strong> Uses <strong>Hash Tables</strong> for instant license plate verification.
-</p>
-
-<h2>Design techniques influencing these ideas</h2>
-<p>
-• <strong>Greedy Algorithms:</strong> Used in Waste Collection to pick the next nearest full bin.<br>
-• <strong>Backtracking:</strong> Used in Land Allocation to try different plot combinations until the best fit is found.<br>
-• <strong>Pattern Matching:</strong> Used in Parking Violation detection to identify illegal vehicle behavior.<br>
-• <strong>Shortest Path:</strong> Dijkstra’s algorithm for emergency vehicle routing through traffic.
-</p>
-</div>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -661,10 +613,5 @@ int main() {
 
     int startDepot = 0;
     optimizeWasteRoute(startDepot, numBins, adj);
-<h2 style="text-align:center; color: #2c3e50; margin-top: 50px;">Technical Source Code (GitHub)</h2>
-<div class="button-grid">
 
-    <a href="https://github.com/ZiaFatima61/Portfolio.github.io/blob/main/Keerthi.html" target="_blank" class="hex-btn">
-        <span>DIJKSTRA (Waste Route)</span>
-    </a>
     
