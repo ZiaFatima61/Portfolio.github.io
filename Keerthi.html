@@ -5,68 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industrial & Urban Management Systems</title>
     <style>
-        body { background-color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 50px auto; padding: 40px; background-color: #ffffff; border: 3px double black; position: relative; }
-        .container::before, .container::after { content: ""; position: absolute; width: 20px; height: 3px; background: black; }
-        .container::before { top: -3px; left: -3px; }
-        .container::after { bottom: -3px; right: -3px; }
-        h1 { text-align: center; color: #333; margin-bottom: 30px; }
-        h2 { color: #222; margin-top: 30px; border-bottom: 2px solid #333; display: inline-block; }
-        h3 { color: #444; margin-top: 25px; }
-        ul { list-style-type: disc; padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        /* Modern Industrial Theme */
+        body { 
+            background-color: #D8B98B; /* Your requested Tan/Sand background */
+            background-image: linear-gradient(135deg, #d8b98b 0%, #c5a678 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            color: #2c3e50;
+        }
+
+        .container { 
+            max-width: 950px; 
+            margin: 30px auto; 
+            padding: 50px; 
+            background-color: rgba(255, 255, 255, 0.95); 
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            position: relative;
+            border-top: 8px solid #2c3e50;
+        }
+
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h2 { 
+            color: #e67e22; /* Industrial Orange Accent */
+            margin-top: 40px; 
+            font-size: 1.8em;
+            display: block;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        .section-card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #2980b9; /* Urban Blue Accent */
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .section-card:hover {
+            transform: translateX(10px);
+            background: #fdfdfd;
+        }
+
+        h3 { 
+            color: #2c3e50; 
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+
+        ul { 
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+
+        li { 
+            margin-bottom: 12px; 
+            position: relative;
+            padding-left: 25px;
+            line-height: 1.5;
+        }
+
+        li::before {
+            content: "▹"; /* Custom bullet */
+            position: absolute;
+            left: 0;
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container { padding: 20px; width: 90%; }
+            h1 { font-size: 1.8em; }
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Industrial & Urban Management Systems</h1>
+        <h1>Industrial & Urban Management</h1>
 
-        <h2>Urban Infrastructure</h2>
+        <h2>🏙️ Urban Infrastructure</h2>
 
-        <h3>1. Industrial Waste Collection Route Optimization</h3>
-        <ul>
-            <li>Aligns with SDG 11 (Sustainable Cities) by reducing carbon emissions through optimized logistics.</li>
-            <li>Uses Graph Theory to find the shortest path for collection vehicles based on real-time bin levels.</li>
-            <li>Reduces fuel consumption and operational costs for heavy industrial zones.</li>
-            <li>Ensures timely removal of hazardous waste to prevent environmental contamination.</li>
-        </ul>
+        <div class="section-card">
+            <h3>1. Industrial Waste Collection Route Optimization</h3>
+            
+            <ul>
+                <li><strong>SDG 11:</strong> Reduces carbon emissions through optimized logistics.</li>
+                <li>Uses <strong>Graph Theory</strong> to find the shortest path based on real-time bin levels.</li>
+                <li>Reduces fuel consumption and operational costs for heavy industrial zones.</li>
+                <li>Ensures timely removal of hazardous waste to prevent contamination.</li>
+            </ul>
+        </div>
 
-        <h3>2. Smart Parking Violation Detection</h3>
-        <ul>
-            <li>Supports SDG 9 by improving urban infrastructure and traffic management.</li>
-            <li>Automates detection of unauthorized parking using Computer Vision and sensor data.</li>
-            <li>Reduces road bottlenecks and improves the flow of emergency service vehicles.</li>
-            <li>Provides real-time data logs for municipal authorities to monitor high-violation zones.</li>
-        </ul>
+        <div class="section-card">
+            <h3>2. Smart Parking Violation Detection</h3>
+            <ul>
+                <li><strong>SDG 9:</strong> Improves urban infrastructure and traffic management.</li>
+                <li>Automates detection using <strong>Computer Vision</strong> and pattern matching.</li>
+                <li>Reduces road bottlenecks for emergency service vehicles.</li>
+                <li>Provides real-time data logs for municipal authorities.</li>
+            </ul>
+        </div>
 
-        <h3>3. Real-Time Traffic Signal Timing Optimization</h3>
-        <ul>
-            <li>Aligns with SDG 11 and SDG 13 (Climate Action) by reducing vehicle idling time.</li>
-            <li>Dynamically adjusts signal cycles based on live traffic density using Max-Flow algorithms.</li>
-            <li>Minimizes congestion and travel time in high-density industrial corridors.</li>
-            <li>Prioritizes freight movement during peak production hours.</li>
-        </ul>
+        <div class="section-card">
+            <h3>3. Real-Time Traffic Signal Timing Optimization</h3>
+            
+            <ul>
+                <li><strong>SDG 11 & 13:</strong> Reduces vehicle idling time and emissions.</li>
+                <li>Dynamically adjusts cycles based on density using <strong>Max-Flow algorithms</strong>.</li>
+                <li>Minimizes congestion in high-density industrial corridors.</li>
+                <li>Prioritizes freight movement during peak production hours.</li>
+            </ul>
+        </div>
 
-        <h2>Industrial Operations & Safety</h2>
+        <h2>🏗️ Industrial Operations & Safety</h2>
 
-        <h3>4. Industrial Land Plot Allocation</h3>
-        <ul>
-            <li>Optimizes the spatial distribution of industrial units based on utility access and zone type.</li>
-            <li>Uses Backtracking and Bin Packing algorithms to maximize land utilization efficiency.</li>
-            <li>Ensures compliance with safety buffers between different industry types (e.g., chemical vs. food).</li>
-            <li>Streamlines the bidding and allocation process for transparent urban development.</li>
-        </ul>
+        <div class="section-card">
+            <h3>4. Industrial Land Plot Allocation</h3>
+            
+            <ul>
+                <li>Optimizes spatial distribution based on utility access and zone type.</li>
+                <li>Uses <strong>Backtracking</strong> and <strong>Bin Packing</strong> to maximize efficiency.</li>
+                <li>Ensures safety buffers between chemical and residential zones.</li>
+                <li>Streamlines the bidding and allocation process for transparency.</li>
+            </ul>
+        </div>
 
-        <h3>5. Chemical Storage Safety Monitoring</h3>
-        <ul>
-            <li>Aligns with SDG 3 (Good Health) and SDG 9 (Industry Innovation) by preventing workplace disasters.</li>
-            <li>Uses IoT sensor grids to monitor heat, pressure, and chemical vapor concentration.</li>
-            <li>Features a Priority-based alert system to handle critical leaks instantly via Min-Heaps.</li>
-            <li>Provides predictive analysis to identify potential reaction risks before they occur.</li>
-        </ul>
+        <div class="section-card">
+            <h3>5. Chemical Storage Safety Monitoring</h3>
+            
+            <ul>
+                <li><strong>SDG 3 & 9:</strong> Prevents workplace disasters through innovation.</li>
+                <li>Uses IoT sensor grids to monitor heat, pressure, and vapor.</li>
+                <li>Features a <strong>Min-Heap</strong> priority system to handle critical leaks instantly.</li>
+                <li>Identifies potential reaction risks before they occur.</li>
+            </ul>
+        </div>
     </div>
+
 </body>
 </html>
-
-           
-    
