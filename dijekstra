@@ -1,1 +1,84 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <climits>
 
+using namespace std;
+
+// Structure to represent a node in the city graph (e.g., Waste Bin Location)
+struct Node {
+    int id;
+    int distance;
+
+    // Operator for the priority queue to select the minimum distance first
+    bool operator>(const Node& other) const {
+        return distance > other.distance;
+    }
+};
+
+// Function to find the most fuel-efficient route for the waste truck
+void optimizeWasteRoute(int startDepot, int numLocations, vector<pair<int, int>> adj[]) {
+    // Priority queue to store {distance, node_id}
+    priority_queue<Node, vector<Node>, greater<Node>> pq;
+
+    // Initialize distances with Infinity (unreachable)
+    vector<int> fuelCost(numLocations, INT_MAX);
+
+    // Starting at the Depot
+    fuelCost[startDepot] = 0;
+    pq.push({startDepot, 0});
+
+    cout << "--- Industrial Waste Collection Route Optimization ---" << endl;
+    cout << "Starting optimization from Depot ID: " << startDepot << endl << endl;
+
+    while (!pq.empty()) {
+        int u = pq.top().id;
+        int d = pq.top().distance;
+        pq.pop();
+
+        // If a shorter path has already been found, skip
+        if (d > fuelCost[u]) continue;
+
+        // Check all neighboring bin locations
+        for (auto edge : adj[u]) {
+            int v = edge.first;
+            int weight = edge.second; // Represents distance or fuel consumption
+
+            // Relaxation step
+            if (fuelCost[u] + weight < fuelCost[v]) {
+                fuelCost[v] = fuelCost[u] + weight;
+                pq.push({v, fuelCost[v]});
+            }
+        }
+    }
+
+    // Output the results
+    cout << "Bin Location ID | Minimum Fuel Units from Depot" << endl;
+    cout << "-----------------------------------------------" << endl;
+    for (int i = 0; i < numLocations; i++) {
+        if (fuelCost[i] == INT_MAX)
+            cout << "      " << i << "         |    Unreachable" << endl;
+        else
+            cout << "      " << i << "         |    " << fuelCost[i] << " units" << endl;
+    }
+}
+
+int main() {
+    int numBins = 6; // Locations: 0 (Depot), 1-5 (Waste Bins)
+    vector<pair<int, int>> adj[6];
+
+    // Adding roads (Edges) with fuel weights (Weights)
+    // adj[u].push_back({v, weight})
+    adj[0].push_back({1, 4}); // Depot to Bin 1
+    adj[0].push_back({2, 2}); // Depot to Bin 2
+    adj[1].push_back({2, 5}); 
+    adj[1].push_back({3, 10});
+    adj[2].push_back({4, 3});
+    adj[4].push_back({3, 4});
+    adj[3].push_back({5, 11});
+
+    int startDepot = 0;
+    optimizeWasteRoute(startDepot, numBins, adj);
+
+    return 0;
+}
